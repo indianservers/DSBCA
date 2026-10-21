@@ -11,12 +11,13 @@ jobs:
     env:
       API_BASE_URL: ${{ vars.API_BASE_URL }}
       ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
-      DSBCA_ANDROID_KEYSTORE: ${{ runner.temp }}/dsbca-release.jks
       DSBCA_ANDROID_STORE_PASSWORD: ${{ secrets.DSBCA_ANDROID_STORE_PASSWORD }}
       DSBCA_ANDROID_KEY_ALIAS: ${{ secrets.DSBCA_ANDROID_KEY_ALIAS }}
       DSBCA_ANDROID_KEY_PASSWORD: ${{ secrets.DSBCA_ANDROID_KEY_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
+      - name: Set temporary signing path
+        run: echo "DSBCA_ANDROID_KEYSTORE=$RUNNER_TEMP/dsbca-release.jks" >> "$GITHUB_ENV"
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
