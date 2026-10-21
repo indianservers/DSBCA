@@ -1,0 +1,8 @@
+-r requirements-lock.txt
+pytest==9.1.1
+reportlab==5.0.1
+black==26.10.1
+ruff==0.17.1
+pip-audit==2.10.1
+bandit==1.9.4
+PyYAML==6.0.3

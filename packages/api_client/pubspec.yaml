@@ -1,0 +1,17 @@
+name: api_client
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.9.0
+  http: ^1.6.0
+  crypto: ^3.0.7
+  flutter_secure_storage: ^9.2.4
+  shared_models:
+    path: ../shared_models
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

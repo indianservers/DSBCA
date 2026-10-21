@@ -1,0 +1,208 @@
+Browser tab: 8, Title: "DSBCA Administration", URL: "http://localhost:5304/#/notifications".
+0 AXWebArea DSBCA Administration, URL: localhost:5304/#/notifications
+	1 container
+		2 container flt-semantic-node-10
+			3 container flt-semantic-node-26
+				4 heading Notifications, Value: 2, ID: flt-semantic-node-27
+					30 text Notifications
+				6 text Development Operator
+			7 text DSB
+			8 text ADMINISTRATION
+			31 text Professional administration
+			32 container flt-semantic-node-683
+				33 checkbox Description: Calculator rules, Value: 0, ID: flt-semantic-node-684
+				34 checkbox Description: Learning academy, Value: 0, ID: flt-semantic-node-685
+				35 checkbox Description: Compliance rules, Value: 0, ID: flt-semantic-node-686
+				36 checkbox Description: Regulatory review, Value: 0, ID: flt-semantic-node-687
+				37 checkbox Description: Webinars, Value: 0, ID: flt-semantic-node-688
+				38 checkbox Description: Delivery center, Value: 1, ID: flt-semantic-node-689
+				39 checkbox Description: Metrics, Value: 0, ID: flt-semantic-node-690
+			18 container flt-semantic-node-24
+				19 button Overview, ID: flt-semantic-node-14
+				20 button Users, ID: flt-semantic-node-15
+				21 button Learning content, ID: flt-semantic-node-16
+				22 button Regulatory updates, ID: flt-semantic-node-17
+				23 button Notifications, ID: flt-semantic-node-18
+				24 button Compliance overview, ID: flt-semantic-node-19
+				25 button Settings, ID: flt-semantic-node-20
+				26 button Audit logs, ID: flt-semantic-node-21
+				27 button AI Knowledge Base, ID: flt-semantic-node-22
+				28 button Professional platform, ID: flt-semantic-node-23
+			29 button Sign out, ID: flt-semantic-node-25
+			40 button Queue in-app campaign, ID: flt-semantic-node-691
+			41 button Save delivery template, ID: flt-semantic-node-692
+			42 button Refresh, ID: flt-semantic-node-693
+			43 text field (settable) Search records
+			44 text Delivered means in-app availability. Submitted means external provider acceptance; email or device delivery is not asserted.
+			45 button (disabled) Previous, ID: flt-semantic-node-696
+			46 text Page 1
+			47 button Next, ID: flt-semantic-node-698
+			48 container flt-semantic-node-699
+				49 container flt-semantic-node-700
+					50 table flt-semantic-node-701
+						51 row flt-semantic-node-805
+							52 cell Description: Record, ID: flt-semantic-node-702
+							53 cell Description: Status / version, ID: flt-semantic-node-703
+							54 cell Description: Actions, ID: flt-semantic-node-704
+						55 row flt-semantic-node-806
+							56 cell flt-semantic-node-705
+								57 text in_app
+							58 cell flt-semantic-node-706
+								59 text planned
+							60 cell flt-semantic-node-707
+								61 container flt-semantic-node-708
+									62 button Inspect record, ID: flt-semantic-node-709
+						63 row flt-semantic-node-807
+							64 cell flt-semantic-node-710
+								65 text in_app
+							66 cell flt-semantic-node-711
+								67 text delivered
+							68 cell flt-semantic-node-712
+								69 container flt-semantic-node-713
+									70 button Inspect record, ID: flt-semantic-node-714
+						71 row flt-semantic-node-808
+							72 cell flt-semantic-node-715
+								73 text in_app
+							74 cell flt-semantic-node-716
+								75 text planned
+							76 cell flt-semantic-node-717
+								77 container flt-semantic-node-718
+									78 button Inspect record, ID: flt-semantic-node-719
+						79 row flt-semantic-node-809
+							80 cell flt-semantic-node-720
+								81 text in_app
+							82 cell flt-semantic-node-721
+								83 text planned
+							84 cell flt-semantic-node-722
+								85 container flt-semantic-node-723
+									86 button Inspect record, ID: flt-semantic-node-724
+						87 row flt-semantic-node-810
+							88 cell flt-semantic-node-725
+								89 text in_app
+							90 cell flt-semantic-node-726
+								91 text planned
+							92 cell flt-semantic-node-727
+								93 container flt-semantic-node-728
+									94 button Inspect record, ID: flt-semantic-node-729
+						95 row flt-semantic-node-811
+							96 cell flt-semantic-node-730
+								97 text in_app
+							98 cell flt-semantic-node-731
+								99 text cancelled
+							100 cell flt-semantic-node-732
+								101 container flt-semantic-node-733
+									102 button Inspect record, ID: flt-semantic-node-734
+						103 row flt-semantic-node-812
+							104 cell flt-semantic-node-735
+								105 text in_app
+							106 cell flt-semantic-node-736
+								107 text cancelled
+							108 cell flt-semantic-node-737
+								109 container flt-semantic-node-738
+									110 button Inspect record, ID: flt-semantic-node-739
+						111 row flt-semantic-node-813
+							112 cell flt-semantic-node-740
+								113 text in_app
+							114 cell flt-semantic-node-741
+								115 text cancelled
+							116 cell flt-semantic-node-742
+								117 container flt-semantic-node-743
+									118 button Inspect record, ID: flt-semantic-node-744
+						119 row flt-semantic-node-814
+							120 cell flt-semantic-node-745
+								121 text in_app
+							122 cell flt-semantic-node-746
+								123 text planned
+							124 cell flt-semantic-node-747
+								125 container flt-semantic-node-748
+									126 button Inspect record, ID: flt-semantic-node-749
+						127 row flt-semantic-node-815
+							128 cell flt-semantic-node-750
+								129 text in_app
+							130 cell flt-semantic-node-751
+								131 text delivered
+							132 cell flt-semantic-node-752
+								133 container flt-semantic-node-753
+									134 button Inspect record, ID: flt-semantic-node-754
+						135 row flt-semantic-node-816
+							136 cell flt-semantic-node-755
+								137 text in_app
+							138 cell flt-semantic-node-756
+								139 text planned
+							140 cell flt-semantic-node-757
+								141 container flt-semantic-node-758
+									142 button Inspect record, ID: flt-semantic-node-759
+						143 row flt-semantic-node-817
+							144 cell flt-semantic-node-760
+								145 text in_app
+							146 cell flt-semantic-node-761
+								147 text planned
+							148 cell flt-semantic-node-762
+								149 container flt-semantic-node-763
+									150 button Inspect record, ID: flt-semantic-node-764
+						151 row flt-semantic-node-818
+							152 cell flt-semantic-node-765
+								153 text in_app
+							154 cell flt-semantic-node-766
+								155 text planned
+							156 cell flt-semantic-node-767
+								157 container flt-semantic-node-768
+									158 button Inspect record, ID: flt-semantic-node-769
+						159 row flt-semantic-node-819
+							160 cell flt-semantic-node-770
+								161 text in_app
+							162 cell flt-semantic-node-771
+								163 text cancelled
+							164 cell flt-semantic-node-772
+								165 container flt-semantic-node-773
+									166 button Inspect record, ID: flt-semantic-node-774
+						167 row flt-semantic-node-820
+							168 cell flt-semantic-node-775
+								169 text in_app
+							170 cell flt-semantic-node-776
+								171 text cancelled
+							172 cell flt-semantic-node-777
+								173 container flt-semantic-node-778
+									174 button Inspect record, ID: flt-semantic-node-779
+						175 row flt-semantic-node-821
+							176 cell flt-semantic-node-780
+								177 text in_app
+							178 cell flt-semantic-node-781
+								179 text cancelled
+							180 cell flt-semantic-node-782
+								181 container flt-semantic-node-783
+									182 button Inspect record, ID: flt-semantic-node-784
+						183 row flt-semantic-node-822
+							184 cell flt-semantic-node-785
+								185 text in_app
+							186 cell flt-semantic-node-786
+								187 text planned
+							188 cell flt-semantic-node-787
+								189 container flt-semantic-node-788
+									190 button Inspect record, ID: flt-semantic-node-789
+						191 row flt-semantic-node-823
+							192 cell flt-semantic-node-790
+								193 text in_app
+							194 cell flt-semantic-node-791
+								195 text planned
+							196 cell flt-semantic-node-792
+								197 container flt-semantic-node-793
+									198 button Inspect record, ID: flt-semantic-node-794
+						199 row flt-semantic-node-824
+							200 cell flt-semantic-node-795
+								201 text in_app
+							202 cell flt-semantic-node-796
+								203 text planned
+							204 cell flt-semantic-node-797
+								205 container flt-semantic-node-798
+									206 button Inspect record, ID: flt-semantic-node-799
+						207 row flt-semantic-node-825
+							208 cell flt-semantic-node-800
+								209 text in_app
+							210 cell flt-semantic-node-801
+								211 text planned
+							212 cell flt-semantic-node-802
+								213 container flt-semantic-node-803
+									214 button Inspect record, ID: flt-semantic-node-804
+
+The focused UI element is 23 button Notifications, ID: flt-semantic-node-18

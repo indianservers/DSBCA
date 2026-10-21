@@ -1,0 +1,71 @@
+Browser tab: 8, Title: "DSBCA Administration", URL: "http://localhost:5304/#/compliance".
+0 AXWebArea DSBCA Administration, URL: localhost:5304/#/compliance
+	1 container
+		2 container flt-semantic-node-10
+			3 container flt-semantic-node-26
+				4 heading Compliance overview, Value: 2, ID: flt-semantic-node-27
+					30 text Compliance overview
+				6 text Development Operator
+			7 text DSB
+			8 text ADMINISTRATION
+			31 text Professional administration
+			32 container flt-semantic-node-827
+				33 checkbox Description: Calculator rules, Value: 0, ID: flt-semantic-node-828
+				34 checkbox Description: Learning academy, Value: 0, ID: flt-semantic-node-829
+				35 checkbox Description: Compliance rules, Value: 1, ID: flt-semantic-node-830
+				36 checkbox Description: Regulatory review, Value: 0, ID: flt-semantic-node-831
+				37 checkbox Description: Webinars, Value: 0, ID: flt-semantic-node-832
+				38 checkbox Description: Delivery center, Value: 0, ID: flt-semantic-node-833
+				39 checkbox Description: Metrics, Value: 0, ID: flt-semantic-node-834
+			18 container flt-semantic-node-24
+				19 button Overview, ID: flt-semantic-node-14
+				20 button Users, ID: flt-semantic-node-15
+				21 button Learning content, ID: flt-semantic-node-16
+				22 button Regulatory updates, ID: flt-semantic-node-17
+				23 button Notifications, ID: flt-semantic-node-18
+				24 button Compliance overview, ID: flt-semantic-node-19
+				25 button Settings, ID: flt-semantic-node-20
+				26 button Audit logs, ID: flt-semantic-node-21
+				27 button AI Knowledge Base, ID: flt-semantic-node-22
+				28 button Professional platform, ID: flt-semantic-node-23
+			29 button Sign out, ID: flt-semantic-node-25
+			40 button Create rule from source template, ID: flt-semantic-node-835
+			41 button New rule version, ID: flt-semantic-node-836
+			42 button Refresh, ID: flt-semantic-node-837
+			43 text field (settable) Search records
+			44 button (disabled) Previous, ID: flt-semantic-node-839
+			45 text Page 1
+			46 button (disabled) Next, ID: flt-semantic-node-841
+			47 container flt-semantic-node-842
+				48 container flt-semantic-node-843
+					49 table flt-semantic-node-844
+						50 row flt-semantic-node-866
+							51 cell Description: Record, ID: flt-semantic-node-845
+							52 cell Description: Status / version, ID: flt-semantic-node-846
+							53 cell Description: Actions, ID: flt-semantic-node-847
+						54 row flt-semantic-node-867
+							55 cell flt-semantic-node-848
+								56 text vat_filing
+							57 cell flt-semantic-node-849
+								58 text published reference-2026-10-21
+							59 cell flt-semantic-node-850
+								60 container flt-semantic-node-851
+									61 button Inspect record, ID: flt-semantic-node-852
+									62 button Validate, ID: flt-semantic-node-853
+									63 button Publish reviewed, ID: flt-semantic-node-854
+									64 button Supersede, ID: flt-semantic-node-855
+									65 button New version, ID: flt-semantic-node-856
+						66 row flt-semantic-node-868
+							67 cell flt-semantic-node-857
+								68 text ct_filing
+							69 cell flt-semantic-node-858
+								70 text published reference-2026-10-21
+							71 cell flt-semantic-node-859
+								72 container flt-semantic-node-860
+									73 button Inspect record, ID: flt-semantic-node-861
+									74 button Validate, ID: flt-semantic-node-862
+									75 button Publish reviewed, ID: flt-semantic-node-863
+									76 button Supersede, ID: flt-semantic-node-864
+									77 button New version, ID: flt-semantic-node-865
+
+The focused UI element is 24 button Compliance overview, ID: flt-semantic-node-19

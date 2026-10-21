@@ -1,0 +1,13 @@
+// Compatibility for the bundled Flutter plugin forwarding encoded DartDefines
+// through the raw --dart-define argument. Override this build's executable only.
+gradle.projectsEvaluated {
+    rootProject.allprojects { project ->
+        project.tasks.configureEach { task ->
+            if (task.name.startsWith('compileFlutterBuild')) {
+                task.doFirst {
+                    task.flutterExecutable = new File(System.getenv('DSBCA_FLUTTER_WRAPPER'))
+                }
+            }
+        }
+    }
+}

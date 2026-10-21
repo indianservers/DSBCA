@@ -1,0 +1,2200 @@
+[
+  {
+    "path": "/api/v1/auth/register",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.auth.register",
+    "dependencies": [
+      "db_session",
+      "sensitive"
+    ]
+  },
+  {
+    "path": "/api/v1/auth/login",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.auth.login",
+    "dependencies": [
+      "db_session",
+      "sensitive"
+    ]
+  },
+  {
+    "path": "/api/v1/auth/refresh",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.auth.refresh",
+    "dependencies": [
+      "db_session",
+      "sensitive"
+    ]
+  },
+  {
+    "path": "/api/v1/auth/logout",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.auth.logout",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/auth/me",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.auth.me",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/auth/request-password-reset",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.auth.request_reset",
+    "dependencies": [
+      "db_session",
+      "sensitive"
+    ]
+  },
+  {
+    "path": "/api/v1/auth/reset-password",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.auth.reset_password",
+    "dependencies": [
+      "db_session",
+      "sensitive"
+    ]
+  },
+  {
+    "path": "/api/v1/auth/oauth/{provider}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.auth.oauth",
+    "dependencies": []
+  },
+  {
+    "path": "/api/v1/users/me",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.profile",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/users/me",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "app.api.resources.edit_profile",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/notifications/preferences",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.preferences",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/users/me/preferences",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.preferences",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/notifications/preferences",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.save_preferences",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/users/me/preferences",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.save_preferences",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/categories",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.categories",
+    "dependencies": [
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/videos",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/videos/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.detail",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/publications",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/publications/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.detail",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/articles",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/articles/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.detail",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/updates",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/updates/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.detail",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/webinars",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/webinars/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.detail",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/updates/{id}/read",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "app.api.resources.mark_update_read",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/publications/{id}/chapters",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.chapters",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/articles/{id}/bookmark",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.bookmark_status",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/articles/{id}/bookmark",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.bookmark",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/articles/{id}/bookmark",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.unbookmark",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.companies",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create_company",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.get_company",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit_company",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete_company",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/people",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/people",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/people/{child_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/people/{child_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/documents",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/documents",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/documents/{child_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/documents/{child_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/reminders",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/reminders",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/reminders/{child_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/companies/{id}/reminders/{child_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.dashboard",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/notifications",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.notifications",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/notifications/{id}/read",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "app.api.resources.read_notification",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/toolkit/gratuity",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.calculate",
+    "dependencies": []
+  },
+  {
+    "path": "/api/v1/discuss/capabilities",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.capabilities",
+    "dependencies": []
+  },
+  {
+    "path": "/api/v1/admin/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.admin_dashboard",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/videos",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/videos",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/videos/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/videos/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/publications",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/publications",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/publications/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/publications/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/articles",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/articles",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/articles/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/articles/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/updates",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/updates",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/updates/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/updates/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/webinars",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/webinars",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/webinars/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/webinars/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/categories",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/categories",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/categories/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/categories/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/chapters",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/chapters",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/chapters/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content/chapters/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/notifications",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.listing",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/notifications",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.api.resources.create",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/notifications/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.edit",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/notifications/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.api.resources.delete",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/content",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.content_index",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/users",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.users",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/users/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.update_user",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.app_settings",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/settings",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.api.resources.save_setting",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/audit-logs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.api.resources.audit_logs",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/capabilities",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.capabilities",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/documents",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.documents",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/organizations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.organizations",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/documents",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.upload_document",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/uploads",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.direct_upload",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/uploads/{version_id}/complete",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.complete_upload",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/documents/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.document_detail",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/documents/{id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "app.ai.api.document_edit",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/documents/{id}/replace",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.replace",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/documents/{id}/{action}",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.document_action",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/processing-jobs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.jobs",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.get_settings",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/settings",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "app.ai.api.save_settings",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/ai/analytics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.analytics",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/conversations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.conversations",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/conversations",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.new_conversation",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/conversations/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.get_conversation",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/conversations/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.ai.api.delete_conversation",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/conversations/{id}/messages",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.messages",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/chat",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.chat",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/chat/stream",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.stream_chat",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/messages/{id}/cancel",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.cancel",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/feedback",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.ai.api.feedback",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/sources/{source_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.source",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/documents/{version_id}/pages/{page}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.document_page",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/documents/{version_id}/pages/{page}/preview",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.page_preview",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/documents/{version_id}/download",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.download",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/ai/files/{version_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.private_file",
+    "dependencies": [
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/internal/ai/jobs/tick",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.ai.api.job_tick",
+    "dependencies": [
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/calculators",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.catalogue",
+    "dependencies": [
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/calculators/{code}/calculate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.compute",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user",
+      "sensitive"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/calculations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.calculations",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/calculations/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.saved_calculation",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/calculations/{id}/export",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.export_calculation",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/rules",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.rules",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/rules",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.create_rule",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/rules/{id}/{action}",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.rule_action",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/learning/{kind}/{id}/state",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.learning_state",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/learning/{kind}/{id}/progress",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.progress",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/learning/{kind}/{id}/bookmark",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.learning_bookmark",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/learning/library",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.library",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/learning/paths",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.paths",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/learning/paths/{id}/enroll",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.enroll",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/learning-paths",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.admin_paths",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/learning-paths",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.create_path",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/companies/{id}/documents/{document_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.update_document",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/companies/{id}/compliance",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.compliance",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/reminder-settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.reminder_settings",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/reminder-settings",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.put_reminder_settings",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/companies/{id}/obligations",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.create_obligation",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/companies/{id}/obligations/{obligation_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "app.professional.api.obligation_state",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/notifications/settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.delivery_settings",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/notifications/settings",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.set_delivery_settings",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/notifications/devices",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.register_device",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/notifications/devices/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.professional.api.remove_device",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/notifications/jobs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.user_jobs",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/notifications",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.admin_jobs",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/notifications/{id}/retry",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.retry_notification",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/internal/professional/notifications/tick",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.notification_tick",
+    "dependencies": [
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/updates/subscriptions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.subscriptions",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/updates/subscriptions",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.subscribe",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/updates/{id}/workflow",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.update_workflow",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/webinars/{id}/register",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.webinar_register",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/webinars/{id}/registration",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.webinar_registration",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/webinars/{id}/register",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.professional.api.webinar_cancel",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/webinars/{id}/join",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.webinar_join",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/webinars/{id}/calendar",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.calendar_export",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/webinars/{id}/registrations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.attendees",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/webinars/{id}/attendees.csv",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.attendee_export",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/metrics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.metrics",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/ai/tools/execute",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.execute_tool",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/ai/tools",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.tool_catalogue",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/media",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.upload_media",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/media/{id}/download",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.media_download",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/rule-templates",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.rule_templates",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/companies/{id}/documents",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.new_company_document",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/professional/compliance-rules",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.available_compliance_rules",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/notifications/campaigns",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.campaign",
+    "dependencies": [
+      "",
+      "administrator",
+      "current_user",
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/learning-paths/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.edit_path",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/learning-paths/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.professional.api.archive_path",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/publications/{id}/chapter-order",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.reorder_chapters",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/video-categories",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.video_categories",
+    "dependencies": [
+      "db_session"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/video-categories",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.admin_video_categories",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/video-categories",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "app.professional.api.create_video_category",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/video-categories/{id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "app.professional.api.edit_video_category",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/admin/professional/video-categories/{id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "app.professional.api.delete_video_category",
+    "dependencies": [
+      "",
+      "current_user",
+      "db_session",
+      "editor"
+    ]
+  },
+  {
+    "path": "/api/v1/chapters/{id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.professional.api.chapter_resource",
+    "dependencies": [
+      "",
+      "db_session",
+      "optional_user"
+    ]
+  },
+  {
+    "path": "/api/v1/health",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.main.health",
+    "dependencies": []
+  },
+  {
+    "path": "/api/v1/ready",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "app.main.ready",
+    "dependencies": [
+      "db_session"
+    ]
+  }
+]

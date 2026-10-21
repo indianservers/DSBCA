@@ -1,0 +1,14 @@
+.env*
+!.env.example
+.venv/
+tests/
+.private*/
+__pycache__/
+app/release_qa.py
+app/demo_check.py
+app/seed.py
+app/ai/dev.py
+app/ai/dev_seed.py
+app/ai/demo_pdfs.py
+app/professional/dev_seed.py
+app/release_qa_reset.py

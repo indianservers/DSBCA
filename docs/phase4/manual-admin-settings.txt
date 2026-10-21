@@ -1,0 +1,28 @@
+Browser tab: 8, Title: "DSBCA Administration", URL: "http://localhost:5304/#/settings".
+0 AXWebArea DSBCA Administration, URL: localhost:5304/#/settings
+	1 container
+		2 container flt-semantic-node-10
+			3 container flt-semantic-node-26
+				4 heading Settings, Value: 2, ID: flt-semantic-node-27
+					30 text Settings
+				6 text Development Operator
+			7 text DSB
+			8 text ADMINISTRATION
+			18 container flt-semantic-node-24
+				19 button Overview, ID: flt-semantic-node-14
+				20 button Users, ID: flt-semantic-node-15
+				21 button Learning content, ID: flt-semantic-node-16
+				22 button Regulatory updates, ID: flt-semantic-node-17
+				23 button Notifications, ID: flt-semantic-node-18
+				24 button Compliance overview, ID: flt-semantic-node-19
+				25 button Settings, ID: flt-semantic-node-20
+				26 button Audit logs, ID: flt-semantic-node-21
+				27 button AI Knowledge Base, ID: flt-semantic-node-22
+				28 button Professional platform, ID: flt-semantic-node-23
+			29 button Sign out, ID: flt-semantic-node-25
+			31 container flt-semantic-node-872
+				32 container flt-semantic-node-870
+					33 text field (settable) Application identity Application name
+					34 button Save settings, ID: flt-semantic-node-871
+
+The focused UI element is 25 button Settings, ID: flt-semantic-node-20

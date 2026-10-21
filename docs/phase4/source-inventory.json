@@ -1,0 +1,397 @@
+[
+  {
+    "file": "backend\\app\\demo_check.py",
+    "bytes": 5655,
+    "sha256": "1ff3828d6256f8ddbe8e00a5504f0761ab25dd4cdd5f0f8f1eddea27ff54e709"
+  },
+  {
+    "file": "backend\\app\\grant_role.py",
+    "bytes": 1453,
+    "sha256": "c80dbb9cf5aeed5b94f1a2f1622d99f86b87b157b5b4ccffe4c3fac91e84e27d"
+  },
+  {
+    "file": "backend\\app\\main.py",
+    "bytes": 2035,
+    "sha256": "ba2c43cdcee4ab654efee650444d9f520c8413242f4874e4acd59c9613f627f4"
+  },
+  {
+    "file": "backend\\app\\seed.py",
+    "bytes": 7422,
+    "sha256": "d98beebd946f6c903ebcf19890b3b5e9724bbe248d9c30b91dfa60574cb7891a"
+  },
+  {
+    "file": "backend\\app\\__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "backend\\app\\ai\\access.py",
+    "bytes": 2612,
+    "sha256": "5edc6c0cf9ae993a5304b304f29194065f07544c07a37f728eb4baa9eb541bad"
+  },
+  {
+    "file": "backend\\app\\ai\\api.py",
+    "bytes": 32490,
+    "sha256": "8de8182f5f94635a9427549e3f189a15564653470228d019aa7a76515a06f69d"
+  },
+  {
+    "file": "backend\\app\\ai\\chat.py",
+    "bytes": 16706,
+    "sha256": "025dcfdd57de409d10091368fde64a2f82926707197b8897ee6e6146cb3489d8"
+  },
+  {
+    "file": "backend\\app\\ai\\configuration.py",
+    "bytes": 923,
+    "sha256": "5bc24b1d3251bf0b68f0363647798118f765b19e652a48ce8ff8748f863926d6"
+  },
+  {
+    "file": "backend\\app\\ai\\demo_pdfs.py",
+    "bytes": 7366,
+    "sha256": "0d0cfab284decb0183b9f5ebafdb7cb75434fd6db838130f219c872255625b32"
+  },
+  {
+    "file": "backend\\app\\ai\\dev.py",
+    "bytes": 271,
+    "sha256": "a3ffb94bf70ef20d9249bc9c4ca5e24c0380f67313c525dbd0cc0bf61469dc7c"
+  },
+  {
+    "file": "backend\\app\\ai\\dev_seed.py",
+    "bytes": 3217,
+    "sha256": "5f1493bbf8ee812ff53a0c51b188200b4e28ef6a701634af2014a27d23c6b3d3"
+  },
+  {
+    "file": "backend\\app\\ai\\ingestion.py",
+    "bytes": 15767,
+    "sha256": "8abd289d605a84aa1afa6d9d218d842ecefa10b50aedc96a91fe940908e35b15"
+  },
+  {
+    "file": "backend\\app\\ai\\models.py",
+    "bytes": 9677,
+    "sha256": "1726ffe5932b1d0e9ae74d5b42d194e4e989f900c17521475561adc6e5b8b741"
+  },
+  {
+    "file": "backend\\app\\ai\\providers.py",
+    "bytes": 5895,
+    "sha256": "5ff9af18584e32aab192e416962f56c05c3f304b26a11502ff885e87c15de87b"
+  },
+  {
+    "file": "backend\\app\\ai\\retention.py",
+    "bytes": 1013,
+    "sha256": "0890169ae959c1d9345afad4c07e7aec9a29def564bf81caa182d879997b1803"
+  },
+  {
+    "file": "backend\\app\\ai\\retrieval.py",
+    "bytes": 7804,
+    "sha256": "579b897cdfef9cd7992331e66793c354fab11aeb24d4b7ead5d9cd8f34d3084e"
+  },
+  {
+    "file": "backend\\app\\ai\\schemas.py",
+    "bytes": 5448,
+    "sha256": "fece064caa6c10810c2ea220e61e5e9224db4fbce8bf1c6e5836249824f463a2"
+  },
+  {
+    "file": "backend\\app\\ai\\storage.py",
+    "bytes": 4959,
+    "sha256": "962062d9144102417bb633c3d5970bbf9c9d77d90113f28888bc88d310445971"
+  },
+  {
+    "file": "backend\\app\\ai\\worker.py",
+    "bytes": 995,
+    "sha256": "072f314a5109afec16b9d2977c382a31397a6cc8f01baa9fc6bde2c5c82092f1"
+  },
+  {
+    "file": "backend\\app\\ai\\__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "backend\\app\\api\\auth.py",
+    "bytes": 5467,
+    "sha256": "75e0a5a0f8740dcb4ae76ac59a8dd69274dd3ad88d0432b10ab3e19d6413ff5f"
+  },
+  {
+    "file": "backend\\app\\api\\resources.py",
+    "bytes": 26576,
+    "sha256": "4d9a3a233ee65318d7d14119b043f3c1f33ae948c3416e915f5d104c6b0e6236"
+  },
+  {
+    "file": "backend\\app\\calculators\\catalogue.py",
+    "bytes": 11085,
+    "sha256": "3f1f69a355ede83b23f84dd706615b469891e6b8b5640f723af062fd533fbfb9"
+  },
+  {
+    "file": "backend\\app\\calculators\\engine.py",
+    "bytes": 27082,
+    "sha256": "0b3ffd50285eddd82775666dcf6a87b53488420e38a0f1f60903a57ec90790fe"
+  },
+  {
+    "file": "backend\\app\\calculators\\reference_rules.py",
+    "bytes": 6388,
+    "sha256": "40698717eccfa8358788534cf08306cae117ed0cc9327568da03ca6855993d48"
+  },
+  {
+    "file": "backend\\app\\calculators\\__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "backend\\app\\core\\config.py",
+    "bytes": 2104,
+    "sha256": "aa85a9d316ff29ebf9e090cb6703ae68d6ffba2f58405c1627ade1f352df320f"
+  },
+  {
+    "file": "backend\\app\\core\\database.py",
+    "bytes": 1285,
+    "sha256": "2542d6eb3e455267e3ea6b7659e895d93d74948b2c96509b152f7062b16dca57"
+  },
+  {
+    "file": "backend\\app\\core\\security.py",
+    "bytes": 5037,
+    "sha256": "d8100b4ba992dafd1dbba7fac235758d1e27f36a1a1232bb5cf75e72ff203ee2"
+  },
+  {
+    "file": "backend\\app\\models\\__init__.py",
+    "bytes": 10595,
+    "sha256": "72abd5cd91a932c494f0ca4ea367b041819c3527fbc27139fade0124308dc745"
+  },
+  {
+    "file": "backend\\app\\professional\\api.py",
+    "bytes": 56424,
+    "sha256": "b7cb94fab42ca2ebc32c2299643f46730a5da21763fd30ba70f94b88815c22e2"
+  },
+  {
+    "file": "backend\\app\\professional\\dev_seed.py",
+    "bytes": 10243,
+    "sha256": "b8ff32fd39c0b67fd5adeb9f3a79060eef7a82c6358fb4df59cd30d448f537cf"
+  },
+  {
+    "file": "backend\\app\\professional\\models.py",
+    "bytes": 8861,
+    "sha256": "78ac4ee7d1a24b1e584f92bcffa7fcb9ae3d68ef3367bd23fb5b025c19f37653"
+  },
+  {
+    "file": "backend\\app\\professional\\notifications.py",
+    "bytes": 13935,
+    "sha256": "b9a21ced294f98b775572440bf0fd63381a3d0e58dc51c3506a680d6d6c05ee8"
+  },
+  {
+    "file": "backend\\app\\professional\\privacy.py",
+    "bytes": 1368,
+    "sha256": "56b36a5201de1093ce0f60a18f6097495b74ebd7b951fe6a0c61c04f0f7d0ff8"
+  },
+  {
+    "file": "backend\\app\\professional\\schemas.py",
+    "bytes": 4421,
+    "sha256": "8cf7002360bf8bc6b764af8a8d5b82fd9d277f2cdd33f2f3c0087a6aba0accb3"
+  },
+  {
+    "file": "backend\\app\\professional\\tools.py",
+    "bytes": 11137,
+    "sha256": "7be1ce1c261729f3fe349c579f8eae55f52d038e44b70c8f136012e903c67f9b"
+  },
+  {
+    "file": "backend\\app\\professional\\worker.py",
+    "bytes": 933,
+    "sha256": "b756aec8ed6141d2f6c934bf16374159f2a9ee7f1b946e8a920f39df255b81c1"
+  },
+  {
+    "file": "backend\\app\\professional\\__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "backend\\app\\schemas\\__init__.py",
+    "bytes": 6345,
+    "sha256": "da700a4160cc23fab0e944f9a359b7e74b86a81dec88a52bdddd77bb4792dfdc"
+  },
+  {
+    "file": "backend\\app\\services\\gratuity.py",
+    "bytes": 874,
+    "sha256": "c19ad37dbefe32ff68da6de9762a91b3e069b6ec48daf355df7c8c594fec5e35"
+  },
+  {
+    "file": "backend\\app\\services\\interfaces.py",
+    "bytes": 419,
+    "sha256": "85d05847032e17fa7ceaf4b3eeb8a3bfc1f21ff6b37bd5449d7fe722e8dacaf8"
+  },
+  {
+    "file": "backend\\alembic\\env.py",
+    "bytes": 985,
+    "sha256": "b6dec5055806fe51a7ee3a1fbb5e1634f3af6ce04f3a3d0afa31c0579222f5ba"
+  },
+  {
+    "file": "backend\\alembic\\versions\\0001_foundation.py",
+    "bytes": 24041,
+    "sha256": "7f4a733dd2ee93758cd639248cf7e469a9e5ff8d248ee0fa1d853d62b186a5a8"
+  },
+  {
+    "file": "backend\\alembic\\versions\\0002_update_reads.py",
+    "bytes": 1197,
+    "sha256": "eb5bd125611e66f856d510b996d59652e4f9155ff7ff015d3d2c5eab9e88aa8a"
+  },
+  {
+    "file": "backend\\alembic\\versions\\0003_ai_research.py",
+    "bytes": 25049,
+    "sha256": "9c6bb91422e406ca2e0172dd49b3a387d1d73160383ba37411bb04e9dbe082a0"
+  },
+  {
+    "file": "backend\\alembic\\versions\\0004_professional_platform.py",
+    "bytes": 24512,
+    "sha256": "67cc7938eb936b0d5983ed6ed60f18d0089c7fb176c910b9071996993e461868"
+  },
+  {
+    "file": "backend\\tests\\conftest.py",
+    "bytes": 2421,
+    "sha256": "84d2aea50f2f6dee7f87289085a7e2b7c285522d1637a92af32d2e3ee7d5a667"
+  },
+  {
+    "file": "backend\\tests\\test_ai.py",
+    "bytes": 15067,
+    "sha256": "e83badce3f7541abb6bf5a604688c30302f6f13917dce9a327e6c6b58b68b57a"
+  },
+  {
+    "file": "backend\\tests\\test_ai_boundaries.py",
+    "bytes": 13029,
+    "sha256": "f25f068af9ee5970a362198c9dc8db5801904b829a3efcc2f401155bf292ddda"
+  },
+  {
+    "file": "backend\\tests\\test_calculators.py",
+    "bytes": 7464,
+    "sha256": "744b79e5311b81d5fc7c533d2265f43b54ab9b6308f252fba50fa79f4a4002a6"
+  },
+  {
+    "file": "backend\\tests\\test_crud.py",
+    "bytes": 4856,
+    "sha256": "3b2af20a686f2fe51cfbc2bee88aaff43bc3763f7e29bd57ec5be0f67db350c2"
+  },
+  {
+    "file": "backend\\tests\\test_professional.py",
+    "bytes": 25035,
+    "sha256": "cd0f14c2cf11a6edbccc3bcf7fdb59814c6140917ed3ab91e37ca6d05f435907"
+  },
+  {
+    "file": "backend\\tests\\test_security.py",
+    "bytes": 4582,
+    "sha256": "152a73d944c1ca9db563f9386fb4a84fa5d6ca86edcca31612e3c0a2fbc69408"
+  },
+  {
+    "file": "backend\\tests\\test_workflows.py",
+    "bytes": 6393,
+    "sha256": "6afb66741d4df262747c206c157a7c9e36481332721e5d8475cb0d5e30a238c1"
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "bytes": 18482,
+    "sha256": "76373a25e68e0cd87c2868d76fc2a6ca06a3499d36aabadeee122a2ff05669e7"
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "bytes": 78268,
+    "sha256": "884ec3cb58eceb913a2b13d68d73eb3b0a68c93acffb27b09a3f13785824682a"
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "bytes": 26513,
+    "sha256": "059d4585ead51f5eda2dc79d67961bbd71d193651df190d9ef1f05f9a1a33949"
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\main.dart",
+    "bytes": 198,
+    "sha256": "f60c7f22ad334c64271e2b3493fe2d4f384a3045caad6134e4f7fd6d156cc7f0"
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\media.dart",
+    "bytes": 1905,
+    "sha256": "527faa58936e08a923281262426b04dda17550c8d1e406b27afa07ed54ea35fd"
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "bytes": 27657,
+    "sha256": "d99c41f51da9102055e1faa394da71d1e7165645e919cddb12634846f37aa7fd"
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "bytes": 35602,
+    "sha256": "b690199ca84a1a9aaea5653fd50fd98c2776015d56828e1c40f1e4849fbca115"
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "bytes": 38519,
+    "sha256": "f623f0517581d89b4151310eb733e7976477e61e01919f8628bd2c3f8e60fb0e"
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "bytes": 38545,
+    "sha256": "f6f39a02a9a08ac964499b16cce2a9bc32d078d786ea49ea132af7c99f6820b4"
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\main.dart",
+    "bytes": 180,
+    "sha256": "31d6a44f97ae9481ec9f6a9e98d4ba0677c101d051adcdc0b27b5158ba9c0c60"
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "bytes": 29287,
+    "sha256": "a7c028df93074c37fb52b63fd6dcd57cea62ada4ed114fcda81de4e36876a12f"
+  },
+  {
+    "file": "packages\\shared_utils\\lib\\shared_utils.dart",
+    "bytes": 1018,
+    "sha256": "6c90f2bbd90cc9ce6f01951479bb36a1c90572edb3ba1c4d78d797864df5cba3"
+  },
+  {
+    "file": "packages\\shared_models\\lib\\shared_models.dart",
+    "bytes": 840,
+    "sha256": "7a52c9b3dd76001b6930a56e72b861ab4b67487a02db0940717fb2b2674df9e2"
+  },
+  {
+    "file": "packages\\design_system\\lib\\design_system.dart",
+    "bytes": 18425,
+    "sha256": "aed117ea26a5aa3bbba959e20d49d43891f6e09a42e1c941949181c274dce299"
+  },
+  {
+    "file": "packages\\api_client\\lib\\api_client.dart",
+    "bytes": 10551,
+    "sha256": "43211bfec0d7076e8fbed6c9a3d683878396e91ed45af1975bf1dd20ecaadf60"
+  },
+  {
+    "file": "packages\\api_client\\test\\session_test.dart",
+    "bytes": 2664,
+    "sha256": "fe76b69ac2407a570fa853fc145d6f9cc7c6c837ea8d03bf5e920fb4e0c3cf14"
+  },
+  {
+    "file": ".github\\workflows\\deploy.yml",
+    "bytes": 2569,
+    "sha256": "8699120a31b5dcf73df516b92a66d967282baf3296d37df29a72ced4ed1258d9"
+  },
+  {
+    "file": "scripts\\android.ps1",
+    "bytes": 1529,
+    "sha256": "2f433b9cc4cb937fa13ee87fe1d92883651d789b86636c5e32b5e5eca24cc801"
+  },
+  {
+    "file": "scripts\\dev.ps1",
+    "bytes": 2658,
+    "sha256": "b2af36347426bf2d23de44a26fb6c514f3f3de2b622f8d2f28dc832f31dcfb9e"
+  },
+  {
+    "file": "scripts\\phase2.ps1",
+    "bytes": 1406,
+    "sha256": "a85404658a420ff3bf4100d26f946fb9c3db7b544185e9bdec6e49d6c00bddf2"
+  },
+  {
+    "file": "scripts\\phase3.ps1",
+    "bytes": 1492,
+    "sha256": "5faf3f83c2d51cef9ff9a5989ed15634f86d0b81bd8b4faf9ce730e8e348eb75"
+  },
+  {
+    "file": "scripts\\phase3_acceptance.py",
+    "bytes": 6584,
+    "sha256": "93421f5c31d78851b7806fd6752d3cb5b383c8b93c25dacf99d4787b0e590825"
+  },
+  {
+    "file": "scripts\\ui_audit.py",
+    "bytes": 2064,
+    "sha256": "2f14f881a2f7c5ab29959f412ebee72b50cc4869bd3e8e0e0b34348ab44b8af6"
+  }
+]

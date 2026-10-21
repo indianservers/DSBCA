@@ -1,0 +1,134 @@
+Browser tab: 8, Title: "DSBCA Administration", URL: "http://localhost:5304/#/audit-logs".
+0 AXWebArea DSBCA Administration, URL: localhost:5304/#/audit-logs
+	1 container
+		2 container flt-semantic-node-10
+			3 container flt-semantic-node-26
+				4 heading Audit logs, Value: 2, ID: flt-semantic-node-27
+					30 text Audit logs
+				6 text Development Operator
+			7 text DSB
+			31 text field (settable) Search audit-logs
+			8 text ADMINISTRATION
+			18 container flt-semantic-node-24
+				19 button Overview, ID: flt-semantic-node-14
+				20 button Users, ID: flt-semantic-node-15
+				21 button Learning content, ID: flt-semantic-node-16
+				22 button Regulatory updates, ID: flt-semantic-node-17
+				23 button Notifications, ID: flt-semantic-node-18
+				24 button Compliance overview, ID: flt-semantic-node-19
+				25 button Settings, ID: flt-semantic-node-20
+				26 button Audit logs, ID: flt-semantic-node-21
+				27 button AI Knowledge Base, ID: flt-semantic-node-22
+				28 button Professional platform, ID: flt-semantic-node-23
+			29 button Sign out, ID: flt-semantic-node-25
+			32 container flt-semantic-node-874
+				33 container flt-semantic-node-875
+					34 table flt-semantic-node-876
+						35 row flt-semantic-node-919
+							36 cell Description: Title / action, ID: flt-semantic-node-877
+							37 cell Description: Status / date, ID: flt-semantic-node-878
+						38 row flt-semantic-node-920
+							39 cell flt-semantic-node-879
+								40 text webinar_register
+							41 cell flt-semantic-node-880
+								42 text 2026-10-21T21:57:49.813175+05:30
+						43 row flt-semantic-node-921
+							44 cell flt-semantic-node-881
+								45 text create_webinars
+							46 cell flt-semantic-node-882
+								47 text 2026-10-21T21:57:49.765948+05:30
+						48 row flt-semantic-node-922
+							49 cell flt-semantic-node-883
+								50 text update_publish
+							51 cell flt-semantic-node-884
+								52 text 2026-10-21T21:57:49.563137+05:30
+						53 row flt-semantic-node-923
+							54 cell flt-semantic-node-885
+								55 text update_approve
+							56 cell flt-semantic-node-886
+								57 text 2026-10-21T21:57:49.544468+05:30
+						58 row flt-semantic-node-924
+							59 cell flt-semantic-node-887
+								60 text update_review
+							61 cell flt-semantic-node-888
+								62 text 2026-10-21T21:57:49.532555+05:30
+						63 row flt-semantic-node-925
+							64 cell flt-semantic-node-889
+								65 text create_updates
+							66 cell flt-semantic-node-890
+								67 text 2026-10-21T21:57:49.521754+05:30
+						68 row flt-semantic-node-926
+							69 cell flt-semantic-node-891
+								70 text update_company_document
+							71 cell flt-semantic-node-892
+								72 text 2026-10-21T21:57:49.488001+05:30
+						73 row flt-semantic-node-927
+							74 cell flt-semantic-node-893
+								75 text create_document
+							76 cell flt-semantic-node-894
+								77 text 2026-10-21T21:57:49.460074+05:30
+						78 row flt-semantic-node-928
+							79 cell flt-semantic-node-895
+								80 text save_calculation
+							81 cell flt-semantic-node-896
+								82 text 2026-10-21T21:57:49.393371+05:30
+						83 row flt-semantic-node-929
+							84 cell flt-semantic-node-897
+								85 text delete_articles
+							86 cell flt-semantic-node-898
+								87 text 2026-10-21T21:54:33.978298+05:30
+						88 row flt-semantic-node-930
+							89 cell flt-semantic-node-899
+								90 text edit_articles
+							91 cell flt-semantic-node-900
+								92 text 2026-10-21T21:53:40.994566+05:30
+						93 row flt-semantic-node-931
+							94 cell flt-semantic-node-901
+								95 text create_articles
+							96 cell flt-semantic-node-902
+								97 text 2026-10-21T21:52:53.461758+05:30
+						98 row flt-semantic-node-932
+							99 cell flt-semantic-node-903
+								100 text local_qa_role_fixture
+							101 cell flt-semantic-node-904
+								102 text 2026-10-21T21:38:35.363867+05:30
+						103 row flt-semantic-node-933
+							104 cell flt-semantic-node-905
+								105 text local_qa_role_fixture
+							106 cell flt-semantic-node-906
+								107 text 2026-10-21T21:38:35.352429+05:30
+						108 row flt-semantic-node-934
+							109 cell flt-semantic-node-907
+								110 text phase3_development_operator_bootstrap
+							111 cell flt-semantic-node-908
+								112 text 2026-10-21T21:38:34.421432+05:30
+						113 row flt-semantic-node-935
+							114 cell flt-semantic-node-909
+								115 text webinar_register
+							116 cell flt-semantic-node-910
+								117 text 2026-10-21T21:15:48.700530+05:30
+						118 row flt-semantic-node-936
+							119 cell flt-semantic-node-911
+								120 text create_webinars
+							121 cell flt-semantic-node-912
+								122 text 2026-10-21T21:15:48.567820+05:30
+						123 row flt-semantic-node-937
+							124 cell flt-semantic-node-913
+								125 text update_publish
+							126 cell flt-semantic-node-914
+								127 text 2026-10-21T21:15:47.997837+05:30
+						128 row flt-semantic-node-938
+							129 cell flt-semantic-node-915
+								130 text update_approve
+							131 cell flt-semantic-node-916
+								132 text 2026-10-21T21:15:47.955283+05:30
+						133 row flt-semantic-node-939
+							134 cell flt-semantic-node-917
+								135 text update_review
+							136 cell flt-semantic-node-918
+								137 text 2026-10-21T21:15:47.930739+05:30
+			138 button (disabled) Previous page, ID: flt-semantic-node-941
+			139 text 84 records Â· Page 1
+			140 button Next page, ID: flt-semantic-node-942
+
+The focused UI element is 26 button Audit logs, ID: flt-semantic-node-21

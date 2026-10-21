@@ -1,0 +1,5 @@
+{"event": "request", "request_id": "97a7a0c8386d43988706845c46a04d82", "method": "GET", "route": "/videos", "status": 200, "duration_ms": 41.63}
+{"event": "request", "request_id": "a81412c1409f4208adf0d67af7bfbe65", "method": "GET", "route": "/articles", "status": 200, "duration_ms": 36.84}
+{"event": "request", "request_id": "f96e695127b24bafae117e9e1309be11", "method": "GET", "route": "/publications", "status": 200, "duration_ms": 39.47}
+{"event": "request", "request_id": "08bb15edee624be88f16a6da08b87325", "method": "GET", "route": "/articles/{id}/bookmark", "status": 200, "duration_ms": 23.01}
+{"event": "request", "request_id": "34dbd4fa18584032b6c09c1fab1d7da2", "method": "GET", "route": "/publications/{id}/chapters", "status": 200, "duration_ms": 28.62}

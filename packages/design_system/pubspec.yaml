@@ -1,0 +1,18 @@
+name: design_system
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+flutter:
+  fonts:
+    - family: DSBBody
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
+    - family: DSBSerif
+      fonts:
+        - asset: assets/fonts/LibreBaskerville.ttf

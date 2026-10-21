@@ -1,0 +1,119 @@
+Browser tab: 8, Title: "DSBCA Administration", URL: "http://localhost:5304/#/professional".
+0 AXWebArea DSBCA Administration, URL: localhost:5304/#/professional
+	1 container
+		2 container flt-semantic-node-10
+			3 container flt-semantic-node-26
+				4 heading Professional platform, Value: 2, ID: flt-semantic-node-27
+					30 text Professional platform
+				6 text Development Operator
+			7 text DSB
+			8 text ADMINISTRATION
+			31 text Professional administration
+			32 container flt-semantic-node-944
+				33 checkbox Description: Calculator rules, Value: 1, ID: flt-semantic-node-945
+				34 checkbox Description: Learning academy, Value: 0, ID: flt-semantic-node-946
+				35 checkbox Description: Compliance rules, Value: 0, ID: flt-semantic-node-947
+				36 checkbox Description: Regulatory review, Value: 0, ID: flt-semantic-node-948
+				37 checkbox Description: Webinars, Value: 0, ID: flt-semantic-node-949
+				38 checkbox Description: Delivery center, Value: 0, ID: flt-semantic-node-950
+				39 checkbox Description: Metrics, Value: 0, ID: flt-semantic-node-951
+			18 container flt-semantic-node-24
+				19 button Overview, ID: flt-semantic-node-14
+				20 button Users, ID: flt-semantic-node-15
+				21 button Learning content, ID: flt-semantic-node-16
+				22 button Regulatory updates, ID: flt-semantic-node-17
+				23 button Notifications, ID: flt-semantic-node-18
+				24 button Compliance overview, ID: flt-semantic-node-19
+				25 button Settings, ID: flt-semantic-node-20
+				26 button Audit logs, ID: flt-semantic-node-21
+				27 button AI Knowledge Base, ID: flt-semantic-node-22
+				28 button Professional platform, ID: flt-semantic-node-23
+			29 button Sign out, ID: flt-semantic-node-25
+			40 button Create rule from source template, ID: flt-semantic-node-952
+			41 button New rule version, ID: flt-semantic-node-953
+			42 button Refresh, ID: flt-semantic-node-954
+			43 text field (settable) Search records
+			44 button (disabled) Previous, ID: flt-semantic-node-956
+			45 text Page 1
+			46 button (disabled) Next, ID: flt-semantic-node-958
+			47 container flt-semantic-node-959
+				48 container flt-semantic-node-960
+					49 table flt-semantic-node-961
+						50 row flt-semantic-node-1019
+							51 cell Description: Record, ID: flt-semantic-node-962
+							52 cell Description: Status / version, ID: flt-semantic-node-963
+							53 cell Description: Actions, ID: flt-semantic-node-964
+						54 row flt-semantic-node-1020
+							55 cell flt-semantic-node-965
+								56 text pillar_two
+							57 cell flt-semantic-node-966
+								58 text published reference-2026-10-21
+							59 cell flt-semantic-node-967
+								60 container flt-semantic-node-968
+									61 button Inspect record, ID: flt-semantic-node-969
+									62 button Validate, ID: flt-semantic-node-970
+									63 button Publish reviewed, ID: flt-semantic-node-971
+									64 button Supersede, ID: flt-semantic-node-972
+									65 button New version, ID: flt-semantic-node-973
+						66 row flt-semantic-node-1021
+							67 cell flt-semantic-node-974
+								68 text tp_documentation
+							69 cell flt-semantic-node-975
+								70 text published reference-2026-10-21
+							71 cell flt-semantic-node-976
+								72 container flt-semantic-node-977
+									73 button Inspect record, ID: flt-semantic-node-978
+									74 button Validate, ID: flt-semantic-node-979
+									75 button Publish reviewed, ID: flt-semantic-node-980
+									76 button Supersede, ID: flt-semantic-node-981
+									77 button New version, ID: flt-semantic-node-982
+						78 row flt-semantic-node-1022
+							79 cell flt-semantic-node-983
+								80 text gratuity
+							81 cell flt-semantic-node-984
+								82 text published reference-2026-10-21
+							83 cell flt-semantic-node-985
+								84 container flt-semantic-node-986
+									85 button Inspect record, ID: flt-semantic-node-987
+									86 button Validate, ID: flt-semantic-node-988
+									87 button Publish reviewed, ID: flt-semantic-node-989
+									88 button Supersede, ID: flt-semantic-node-990
+									89 button New version, ID: flt-semantic-node-991
+						90 row flt-semantic-node-1023
+							91 cell flt-semantic-node-992
+								92 text qfzp
+							93 cell flt-semantic-node-993
+								94 text published reference-2026-10-21
+							95 cell flt-semantic-node-994
+								96 container flt-semantic-node-995
+									97 button Inspect record, ID: flt-semantic-node-996
+									98 button Validate, ID: flt-semantic-node-997
+									99 button Publish reviewed, ID: flt-semantic-node-998
+									100 button Supersede, ID: flt-semantic-node-999
+									101 button New version, ID: flt-semantic-node-1000
+						102 row flt-semantic-node-1024
+							103 cell flt-semantic-node-1001
+								104 text vat
+							105 cell flt-semantic-node-1002
+								106 text published reference-2026-10-21
+							107 cell flt-semantic-node-1003
+								108 container flt-semantic-node-1004
+									109 button Inspect record, ID: flt-semantic-node-1005
+									110 button Validate, ID: flt-semantic-node-1006
+									111 button Publish reviewed, ID: flt-semantic-node-1007
+									112 button Supersede, ID: flt-semantic-node-1008
+									113 button New version, ID: flt-semantic-node-1009
+						114 row flt-semantic-node-1025
+							115 cell flt-semantic-node-1010
+								116 text corporate_tax
+							117 cell flt-semantic-node-1011
+								118 text published reference-2026-10-21
+							119 cell flt-semantic-node-1012
+								120 container flt-semantic-node-1013
+									121 button Inspect record, ID: flt-semantic-node-1014
+									122 button Validate, ID: flt-semantic-node-1015
+									123 button Publish reviewed, ID: flt-semantic-node-1016
+									124 button Supersede, ID: flt-semantic-node-1017
+									125 button New version, ID: flt-semantic-node-1018
+
+The focused UI element is 28 button Professional platform, ID: flt-semantic-node-23

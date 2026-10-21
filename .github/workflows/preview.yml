@@ -1,0 +1,60 @@
+name: Configured preview deployment
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: dsbca-preview
+  cancel-in-progress: true
+jobs:
+  verify:
+    uses: ./.github/workflows/verify.yml
+  deploy:
+    needs: verify
+    if: vars.PREVIEW_DEPLOY_ENABLED == 'true' && (github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository)
+    environment: preview
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        project: [api, user, admin]
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ matrix.project == 'api' && secrets.VERCEL_API_PROJECT_ID || matrix.project == 'user' && secrets.VERCEL_USER_PROJECT_ID || secrets.VERCEL_ADMIN_PROJECT_ID }}
+      API_BASE_URL: ${{ vars.PREVIEW_API_BASE_URL }}
+      PROJECT: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.5'
+          channel: stable
+      - name: Validate protected release configuration
+        shell: bash
+        run: |
+          test -n "$VERCEL_TOKEN" && test -n "$VERCEL_ORG_ID" && test -n "$VERCEL_PROJECT_ID"
+          [[ "$API_BASE_URL" == https://* ]] || exit 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build web release
+        if: matrix.project != 'api'
+        shell: bash
+        run: |
+          cd "apps/dsbca_$PROJECT"
+          flutter pub get --enforce-lockfile
+          flutter build web --release --no-wasm-dry-run --dart-define="API_BASE_URL=$API_BASE_URL"
+          cp vercel.json build/web/vercel.json
+      - name: Deploy isolated preview project
+        shell: bash
+        run: |
+          if [ "$PROJECT" = api ]; then cd backend; else cd "apps/dsbca_$PROJECT/build/web"; fi
+          npx vercel@50.0.0 deploy --yes --token "$VERCEL_TOKEN"
+      - name: Post-deployment readiness
+        shell: bash
+        run: curl --fail --retry 3 --max-time 30 "$API_BASE_URL/api/v1/ready"

@@ -1,0 +1,2081 @@
+[
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 206,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() async { if (c.value.isPlaying) { await c.pause(); await persist(); } else { await c.play(); }",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 224,
+    "component": "_Academy",
+    "event": "onChanged",
+    "action_source": "(v) => c.setPlaybackSpeed(v!), ), IconButton( tooltip: 'Full screen', onPressed: () => Navigator.of(context).push( MaterialPageRout",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 228,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => Navigator.of(context).push( MaterialPageRoute<void>( fullscreenDialog: true, builder: (_) => Scaffold( appBar: AppBar(tit",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 262,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => context.canPop() ? context.pop() : context.go('/learn'), icon: const Icon(Icons.arrow_back), ), Expanded( child:",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 274,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => context.push('/learning-library'), icon: const Icon(Icons.school_outlined), ), ], ), if (error != null) DSBErrorState(error!, onRet",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 309,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "bookmark, icon: Icon( state?['bookmarked'] == true ? Icons.bookmark : Icons.bookmark_border,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 318,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => persist(complete: true), icon: const Icon(Icons.check_circle_outline), label: Text( (state?['progress'] as Map?)?['completed'] == t",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 327,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => Clipboard.setData( ClipboardData( text: '${Uri.base.origin}/#/content/${widget.kind}/${widget.id}',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 347,
+    "component": "_Academy",
+    "event": "onTap",
+    "action_source": "() async { setState(() => chapter = c); if (widget.api.signedIn) { await widget.api.put( '/professional/learning/",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 369,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => openAsset( chapter!['asset_id'] as String?, fallback: chapter!['download_url'] as String?, ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 377,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() async { await widget.api.put( '/professional/learning/chapters/${chapter!['id']}/progress', {",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 392,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => openAsset( meta['asset_id'] as String?, fallback: x['download_url'] as String?, ), child: const Text('Open publication PDF'),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 401,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => openAsset( x['asset_id'] as String?, fallback: x['download_url'] as String?, ), child: const Text('Open authorized PDF'),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 410,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => open(x['source_url'] as String?), child: const Text('Open official source'), ), ], if (widget.kind == 'webinars') ...[ const",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 433,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "!widget.api.signedIn || (registration?['status'] == 'registered' && meta['join_configured'] != true)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 446,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => eventAction('cancel'), child: const Text('Cancel registration'), ), if (meta['recording_configured'] == true)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 451,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => eventAction('recording'), child: const Text('Authorized recording'), ), ], TextButton( onPr",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 456,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "!widget.api.signedIn ? null : () async { final r = await widget.api.dio.get<String>( '/profes",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\academy.dart",
+    "line": 496,
+    "component": "_Academy",
+    "event": "onPressed",
+    "action_source": "() => context.push('/learning-library'), child: const Text('Learning paths, saved and recently viewed'), ), ], ], ), ); } }",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 165,
+    "component": "AppShell",
+    "event": "onTap",
+    "action_source": "(i) { if (navigationShell != null) { navigationShell!.goBranch( i, initialLocation: i == navigationShell!.currentIndex, ); } el",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 207,
+    "component": "Section",
+    "event": "onPressed",
+    "action_source": "onTap, child: Text(action!)), ], ), ); } class RemoteList extends ConsumerStatefulWidget { const RemoteList({ super.key, required this.path, required this.builder, this",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 291,
+    "component": "Segments",
+    "event": "onTap",
+    "action_source": "() => onChanged(i), child: Container( alignment: Alignment.center, padding: const EdgeInsets.symmetric(vertical: 14), decoration: BoxDecoration(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 524,
+    "component": "_SignInState",
+    "event": "onPressed",
+    "action_source": "submit, ), if (expanded) Wrap( alignment: WrapAlignment.center, children: [",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 531,
+    "component": "_SignInState",
+    "event": "onPressed",
+    "action_source": "() => setState(() { register = !register; reset = false; }), child: Text(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 540,
+    "component": "_SignInState",
+    "event": "onPressed",
+    "action_source": "() => setState(() { reset = !reset; register = false; }), child: const Text('Forgot",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 570,
+    "component": "_SignInState",
+    "event": "onPressed",
+    "action_source": "() async { try { await ref .read(apiProvider)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 591,
+    "component": "_SignInState",
+    "event": "onPressed",
+    "action_source": "() => context.go('/home'), child: const Text( 'Explore as guest', style: TextStyle(decoration: TextDecoration.underline),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 625,
+    "component": "Home",
+    "event": "onTap",
+    "action_source": "() => context.go('/profile'), child: const CircleAvatar( backgroundColor: DSBColors.lavender, child: Text('DS', style: TextStyle(color: DSBColors.violet)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 651,
+    "component": "Home",
+    "event": "onPressed",
+    "action_source": "() => context.go('/notifications'), icon: const Icon(Icons.notifications_none), ), ), ], ), const SizedBox(height: 20), DSB",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 660,
+    "component": "Home",
+    "event": "onSubmitted",
+    "action_source": "(_) => context.go('/discuss'), ), const SizedBox(height: 18), if (api.signedIn) dashboard.when( data: (data) => DeadlineCard(deadline: da",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 718,
+    "component": "Home",
+    "event": "onTap",
+    "action_source": "() => context.go(paths[i]), child: DSBCard( child: Column( crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: M",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 750,
+    "component": "Home",
+    "event": "onTap",
+    "action_source": "() => context.go('/updates'), ), RemoteList( path: '/updates', builder: (items) => contentCards(context, items, 'updates'), ), ], ); } } class",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 801,
+    "component": "DeadlineCard",
+    "event": "onPressed",
+    "action_source": "() => context.go('/reminders'), ), ), const SizedBox(width: 8), Expanded( child: FilledButton( style: FilledButton.styl",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 810,
+    "component": "DeadlineCard",
+    "event": "onPressed",
+    "action_source": "() => context.go('/reminders'), child: const Text('My reminders'), ), ), ], ), ], ), ); } Widget contentCards(BuildContext c,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 831,
+    "component": "DeadlineCard",
+    "event": "onTap",
+    "action_source": "() => c.go('/content/$kind/${x['id']}'), ), ) .toList(), ); class Discuss extends ConsumerWidget { const Discuss({super.key}); @override Widget build(BuildContext context,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 867,
+    "component": "_LearnState",
+    "event": "onPressed",
+    "action_source": "() => context.push('/learning-library'), icon: const Icon(Icons.school_outlined), label: const Text('My learning paths & saved resources'), ), ), Segments(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 875,
+    "component": "_LearnState",
+    "event": "onChanged",
+    "action_source": "(i) => context.go(i == 0 ? '/learn' : '/learn?tab=publications'), ), const SizedBox(height: 12), DSBSearchBar( hint: widget.publications ? 'Search ar",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 883,
+    "component": "_LearnState",
+    "event": "onChanged",
+    "action_source": "(q) { timer?.cancel(); timer = Timer(const Duration(milliseconds: 300), () { if (mounted) setState(() => search = q); }); }, ), const Siz",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 900,
+    "component": "_LearnState",
+    "event": "onTap",
+    "action_source": "() => setState(() { category = null; videoCategory = null; }), ), ...items.map( (x) => DSBCategoryChip(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 909,
+    "component": "_LearnState",
+    "event": "onTap",
+    "action_source": "() => setState(() { category = x['id'] as String; videoCategory = null; }), ), ), ], ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 931,
+    "component": "_LearnState",
+    "event": "onTap",
+    "action_source": "() => setState(() => videoCategory = null), ), ...items.map( (x) => DSBCategoryChip( x['name'] as String, sel",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 937,
+    "component": "_LearnState",
+    "event": "onTap",
+    "action_source": "() => setState(() => videoCategory = x['id'] as String), ), ), ], ), ), ), if (!widget.publ",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 954,
+    "component": "_LearnState",
+    "event": "onPressed",
+    "action_source": "() => setState(() => search = x), ), ) .toList(), ), const Section('Video lessons'), ] else const SizedBox(height",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 984,
+    "component": "_LearnState",
+    "event": "onTap",
+    "action_source": "() => context.go('/content/publications/${x['id']}'), ), RemoteList( path: '/publications/${x['",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1021,
+    "component": "_LearnState",
+    "event": "onPressed",
+    "action_source": "() => context.go( '/content/publications/${x['id']}', ), icon: const Icon(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1045,
+    "component": "_LearnState",
+    "event": "onTap",
+    "action_source": "() => context.go('/content/videos/${x['id']}'), ); }), ), ), if (widget.publications) ...[ const Section('From our desk'), RemoteList(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1066,
+    "component": "_LearnState",
+    "event": "onTap",
+    "action_source": "() => context.go('/content/articles/${x['id']}'), child: Column( crossAxisAlignment: CrossAxisAlignment",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1126,
+    "component": "_BookmarkState",
+    "event": "onPressed",
+    "action_source": "() async { final api = ref.read(apiProvider); if (!api.signedIn) { context.go('/sign-in'); return; } try { if (saved) { await api.delete('/ar",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1186,
+    "component": "_UpdatesState",
+    "event": "onPressed",
+    "action_source": "() => context.push('/delivery-settings'), icon: const Icon(Icons.notifications_active_outlined), label: const Text('Subscribe to topics'), ), ), const Text('Up",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1196,
+    "component": "_UpdatesState",
+    "event": "onChanged",
+    "action_source": "(i) => setState(() => tab = i), ), const SizedBox(height: 14), InkWell( onTap: () => context.go('/reminders'), child: const DSBCard( color: DSBColors.navy,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1200,
+    "component": "_UpdatesState",
+    "event": "onTap",
+    "action_source": "() => context.go('/reminders'), child: const DSBCard( color: DSBColors.navy, child: Row( children: [ Icon(Icons.calendar_today_outlined, color: C",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1239,
+    "component": "_UpdatesState",
+    "event": "onTap",
+    "action_source": "() async { final api = ref.read(apiProvider); if (!api.signedIn) { context.go('/sign-in'); return; }",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1294,
+    "component": "_UpdatesState",
+    "event": "onTap",
+    "action_source": "() async { try { await api.patch('/notifications/${x['id']}/read'); if (c.mounted) { final path = x['deep_link'] as String? ??",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1305,
+    "component": "_UpdatesState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, false), child: const Text('Close'), ), FilledButton( onPressed: ()",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1309,
+    "component": "_UpdatesState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, true), child: const Text('Open related page'), ), ], child: Column(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1366,
+    "component": "Alerts",
+    "event": "onPressed",
+    "action_source": "() => context.push('/delivery-settings'), icon: const Icon(Icons.tune), label: const Text('Delivery preferences & subscriptions'), ), Text( TimeOfDay.now",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1403,
+    "component": "Alerts",
+    "event": "onPressed",
+    "action_source": "() => context.go('/sign-in'), child: const Text('Sign in'), ), ], ), ), ], ), ); } class Profile extends ConsumerWid",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1440,
+    "component": "Profile",
+    "event": "onPressed",
+    "action_source": "busy ? null : () => Navigator.pop(ctx), child: const Text('Cancel'), ), FilledButton( onPressed: busy ? null :",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1444,
+    "component": "Profile",
+    "event": "onPressed",
+    "action_source": "busy ? null : () async { if (controller.text.trim().isEmpty) { change(() => error = 'Enter your name.');",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1501,
+    "component": "Profile",
+    "event": "onPressed",
+    "action_source": "() => editName(context, api), icon: const Icon(Icons.edit_outlined), label: const Text('Edit profile'), ), DSBSecondaryButton(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1507,
+    "component": "Profile",
+    "event": "onPressed",
+    "action_source": "() => context.go('/delivery-settings'), ), const SizedBox(height: 12), DSBPrimaryButton( api.signedIn ? 'Sign out' : 'Sign in',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\app.dart",
+    "line": 1512,
+    "component": "Profile",
+    "event": "onPressed",
+    "action_source": "() async { if (api.signedIn) await api.logout(); if (context.mounted) context.go('/sign-in'); }, ), ], ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 84,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx), child: const Text('Cancel'), ), FilledButton( onPressed: () => Navigator.pop(ctx, { for (final e in contr",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 88,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, { for (final e in controllers.entries) e.key: e.value.text, ...flags, }), child: const Text('Confirm & save'),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 120,
+    "component": "_Compliance",
+    "event": "onChanged",
+    "action_source": "(v) => e.value.text = v!, ), ), for (final e in flags.entries) CheckboxListTile( title: Text(e.key.replaceAll('",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 127,
+    "component": "_Compliance",
+    "event": "onChanged",
+    "action_source": "(v) => change(() => flags[e.key] = v ?? false), ), ], ), ), ), ); for (final c in controllers.values) { c.dispose(); } return",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 244,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, false), child: const Text('Cancel'), ), FilledButton( onPressed: () => Navigator.pop(ctx, true), child: const Text('De",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 248,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, true), child: const Text('Delete permanently'), ), ], ), ); if (confirmed != true) return; try { await widget.api.delete",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 292,
+    "component": "_Compliance",
+    "event": "onSelected",
+    "action_source": "(action) async { if (action == 'renew') { await document(doc); } else if (action == 'delete') { await removeRecord( '/companies/$selected/documents/${doc['id']}'",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 517,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "widget.api.signedIn ? preferences : null, icon: const Icon(Icons.notifications_active_outlined), ), IconButton( tooltip: 'Refresh',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 522,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "load, icon: const Icon(Icons.refresh), ), ], ), const Text( 'Recorded expiries, supported deadlines and renewal history',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 542,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "widget.api.signedIn ? () => company() : null, icon: const Icon(Icons.add_business), label: const Text('Add company'), ), if (selected != nu",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 548,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => company(companies.firstWhere((x) => x['id'] == selected)), child: const Text('Edit profile'), ), TextButton(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 553,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => removeRecord( '/companies/$selected', 'company', companyRecord: true, ), child: const Text('Delet",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 561,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => person(), child: const Text('Add person'), ), TextButton( onPressed: () => document(), child: const Text('A",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 565,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => document(), child: const Text('Add document'), ), TextButton( onPressed: obligation, child: const Text('Add",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 569,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "obligation, child: const Text('Add obligation'), ), ], ], ), if (companies.isNotEmpty) DropdownButtonFormFi",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 589,
+    "component": "_Compliance",
+    "event": "onChanged",
+    "action_source": "(v) { selected = v; categoryFilter = \"all\"; personFilter = \"all\"; load(); }, ), ExpansionTile(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 616,
+    "component": "_Compliance",
+    "event": "onSelected",
+    "action_source": "(_) => setState(() => filter = v), ), ) .toList(), ), const SizedBox(height: 12), W",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 650,
+    "component": "_Compliance",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() => categoryFilter = v!), ), ), SizedBox( width: 220, child: DropdownButtonFormField<",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 671,
+    "component": "_Compliance",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() => personFilter = v!), ), ), SizedBox( width: 220, child: TextField(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 680,
+    "component": "_Compliance",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() => dateFrom = v), ), ), SizedBox( width: 220, child: TextField(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 689,
+    "component": "_Compliance",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() => dateTo = v), ), ), ], ), ], ), ...docs.map( (d) => Padding(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 718,
+    "component": "_Compliance",
+    "event": "onTap",
+    "action_source": "() => person(p), trailing: IconButton( tooltip: 'Delete person', onPressed: () => removeRecord( '/companies/$selected/people/${",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 721,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() => removeRecord( '/companies/$selected/people/${p['id']}', 'person', ), icon: const Icon(Icons.delete_outline),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\compliance.dart",
+    "line": 752,
+    "component": "_Compliance",
+    "event": "onPressed",
+    "action_source": "() async { try { await widget.api.patch( '/professional/companies/$selected/obligations/${o['id']}',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 172,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx), child: const Text('Close'), ), ], child: SizedBox( width: 680, child: SingleChildScrollView(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 188,
+    "component": "_Toolkit",
+    "event": "onTap",
+    "action_source": "() { Navigator.pop(ctx); final d = definitions .where((r) => r['code'] == x['calculator']) .fir",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 235,
+    "component": "_Toolkit",
+    "event": "onChanged",
+    "action_source": "(v) { setState(() => values[key] = v); changed(); }, ), 'select' => DropdownButtonFormField<String>( isExpanded: true, initialVal",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 247,
+    "component": "_Toolkit",
+    "event": "onChanged",
+    "action_source": "(v) { setState(() => values[key] = v); changed(); }, ), _ => TextField( controller: fields[key], decoration: InputDecoration(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 270,
+    "component": "_Toolkit",
+    "event": "onChanged",
+    "action_source": "(_) => changed(), ), }, ); } Widget output() { final r = result!; final rows = ((r['schedule'] as List?) ?? []) .map((x) => Json.from(x as Map)) .toList",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 333,
+    "component": "_Toolkit",
+    "event": "onTap",
+    "action_source": "() => launchUrl(Uri.parse(source['url'] as String)), ), ], ), if (current.isNotEmpty) ...[ const SizedBox(height: 12), const Text('Detailed",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 358,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "schedulePage > 0 ? () => setState(() => schedulePage--) : null, child: const Text('Previous'), ), Text('Page ${sche",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 365,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "(schedulePage + 1) * 20 < rows.length ? () => setState(() => schedulePage++) : null, child: const Text('Next'), ), ],",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 379,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "() => Clipboard.setData( ClipboardData( text: const JsonEncoder.withIndent(' ').convert(r), ), ), ), TextButto",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 388,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "() => SharePlus.instance.share( ShareParams( text: const JsonEncoder.withIndent(' ').convert(r), sharePositionOrigin: const Rect.fromLTWH(0, 0, 1,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 398,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "r['run_id'] == null && r['status'] != 'restricted' && !busy ? () => calculate(save: true) : null, ), ], ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 429,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "widget.api.signedIn ? history : null, icon: const Icon(Icons.history), ), ], ), const SizedBox(height: 8), const Text( 'Versioned",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 472,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "() => select(d), child: const Text('Open calculator'), ), ], ), ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 485,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "() => setState(() => definition = null), child: const Text('All calculators'), ), if (definition!['rule_required'] == true) DropdownButtonFormField<String>",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 507,
+    "component": "_Toolkit",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() => rule = v), ), const SizedBox(height: 16), ...((definition!['fields'] as List).map( (f) => input(Json.from(f as Map)), )),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 520,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "() => calculate(), ), OutlinedButton( onPressed: () => select(definition!), child: const Text('Reset'), ), ],",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 523,
+    "component": "_Toolkit",
+    "event": "onPressed",
+    "action_source": "() => select(definition!), child: const Text('Reset'), ), ], ), CheckboxListTile( title: const Text('Update results while edi",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 531,
+    "component": "_Toolkit",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() => auto = v ?? false), ), if (result != null) output(), ], ], ), ); } class LearningLibrary extends StatefulWidget { const LearningLibrar",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 577,
+    "component": "_Library",
+    "event": "onSelected",
+    "action_source": "(_) => setState(() { view = v; load(); }), ), ) .toList(), ), Expanded(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 613,
+    "component": "_Library",
+    "event": "onTap",
+    "action_source": "view == 'paths' ? null : () => context.push(x['path'] as String), ), if (view == 'paths') .",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 622,
+    "component": "_Library",
+    "event": "onPressed",
+    "action_source": "x['enrolled'] == true ? null : () async { await widget.api.post(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 643,
+    "component": "_Library",
+    "event": "onTap",
+    "action_source": "() => context.push( '/content/${i['kind']}/${i['resource_id']}', ), ), ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 741,
+    "component": "_NotificationStatus",
+    "event": "onPressed",
+    "action_source": "load, icon: const Icon(Icons.refresh), ), ], ), if (error != null) DSBErrorState(error!), if (settings == null) const DSBLoadingState(),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 760,
+    "component": "_NotificationStatus",
+    "event": "onChanged",
+    "action_source": "(v) => channel(key, v), ), const Text( 'Regulatory update subscriptions', style: DSBTypography.heading, ), ...subjects.map(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\professional.dart",
+    "line": 770,
+    "component": "_NotificationStatus",
+    "event": "onChanged",
+    "action_source": "(enabled) async { final next = [...subscriptions]; if (enabled == true) { next.add(subject); } else { next.remove(s",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 164,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, false), child: const Text('Cancel'), ), FilledButton( onPressed: () => Navigator.pop(ctx, true), child: const Text('De",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 168,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, true), child: const Text('Delete'), ), ], child: const Text( 'This conversation will be hidden immediately and removed accordi",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 314,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() { setState(() { periodStart = periodEnd = null; }); Navigator.pop(ctx); }, child: const Text('Clear'),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 323,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() { if (DateTime.tryParse(start.text) == null || DateTime.tryParse(end.text) == null || DateTime.parse( start.text,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 376,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "busy ? null : newResearch, ), const SizedBox(height: 12), Expanded( child: ListView( children: [ ...conversations.map( (c)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 395,
+    "component": "_ResearchState",
+    "event": "onTap",
+    "action_source": "() => resume(c), trailing: IconButton( tooltip: 'Delete conversation', onPressed: busy ? null : () => remove(c), icon: co",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 398,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "busy ? null : () => remove(c), icon: const Icon(Icons.delete_outline, size: 18), ), ), ), if (conversations.length <",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 405,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() { historyPage++; loadHistory(more: true); }, child: const Text('Load more'), ), ],",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 451,
+    "component": "_ResearchState",
+    "event": "onTap",
+    "action_source": "() => showSource(s), child: DSBCard( outlined: true, padding: 12, child: Column( crossAxisAlignment: CrossAxisAlignment",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 498,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() { final path = data['path'] as String; context.push( data['prefill'] == null ? path : '$path?inputs=${Uri.encodeComponent(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 512,
+    "component": "_ResearchState",
+    "event": "onTap",
+    "action_source": "() => context.push(item['path'] as String), ), ), if (data['kind'] == 'compliance') ...(((data['data'] as Map?)?['documents'] as List?) ?? []).map( (doc) =>",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 586,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() { setState(() => sources = citations); showSource(citations[i]); }, ), ), ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 598,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() => Clipboard.setData( ClipboardData(text: m['text'] as String? ?? ''), ), ), if (m['id'] != null) ...[",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 606,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() => feedback(m, 1), ), IconButton( tooltip: 'Needs review', icon: const Icon(Icons.thumb_down_outlined, size: 18)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 611,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() => feedback(m, -1), ), ], if (m['status'] == 'failed' || m['status'] == 'cancelled') TextButton( o",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 616,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "busy ? null : () { final q = messages .wh",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 686,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "busy ? null : filters, icon: const Icon(Icons.filter_list), ), IconButton( tooltip: 'Conver",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 691,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "historySheet, icon: const Icon(Icons.history), ), IconButton( tooltip: 'New conversation',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 696,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "busy ? null : newResearch, icon: const Icon(Icons.add), ), ], ), Text(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 720,
+    "component": "_ResearchState",
+    "event": "onTap",
+    "action_source": "busy ? null : () => setState(() => subject = s), ), )",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 765,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() => composer.text = q, ), ), ), CheckboxListTile( contentPadding: Edg",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 780,
+    "component": "_ResearchState",
+    "event": "onChanged",
+    "action_source": "busy ? null : (v) => setState(() => includeDemo = v!), ), ], if (hasOld",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 787,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "olderMessages, child: const Text('Load earlier messages'), ), ...messages.map(bubble), if (partial.isNotE",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 802,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "() => showSource(sources.first), icon: const Icon(Icons.menu_book_outlined), label: Text( 'View ${sources.length} verif",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 826,
+    "component": "_ResearchState",
+    "event": "onSubmitted",
+    "action_source": "(_) => send(), ), ), const SizedBox(width: 10), IconButton.filled( tooltip: busy ? 'S",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 832,
+    "component": "_ResearchState",
+    "event": "onPressed",
+    "action_source": "busy ? stop : () => send(), icon: Icon(busy ? Icons.stop : Icons.arrow_upward), ), ], ), ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 932,
+    "component": "_SourceState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(context), icon: const Icon(Icons.close), ), ], ), ), Expanded( child: SingleChildScroll",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 993,
+    "component": "_SourceState",
+    "event": "onPressed",
+    "action_source": "number <= 1 || loading ? null : () { number--; load(); }, ico",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 1004,
+    "component": "_SourceState",
+    "event": "onPressed",
+    "action_source": "loading || number >= (page?['page_count'] as int? ?? number) ? null : () { number",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_user\\lib\\research.dart",
+    "line": 1015,
+    "component": "_SourceState",
+    "event": "onPressed",
+    "action_source": "original, child: const Text('Open original PDF'), ), ], ), ), ], ), ), ); }",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 105,
+    "component": "_AdminLoginState",
+    "event": "onPressed",
+    "action_source": "() async { setState(() { busy = true; error = null; }); try { final api =",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 227,
+    "component": "AdminShell",
+    "event": "onTap",
+    "action_source": "() { if (MediaQuery.sizeOf(context).width < 900) { Navigator.pop(context); } context.go('/${sections[i]}');",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 238,
+    "component": "AdminShell",
+    "event": "onPressed",
+    "action_source": "() async { await ref.read(apiProvider).logout(); if (context.mounted) context.go('/login'); }, child: const Text( 'Sign out",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 434,
+    "component": "_ContentState",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() => kind = v!), ), const SizedBox(height: 20), Expanded( child: ResourceTable( key: ValueKey(kind), path: '/admin/content/$kind',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 538,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "busy ? null : () => Navigator.pop(ctx, false), child: const Text('Cancel'), ), FilledButton( onPressed: busy ? null",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 542,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "busy ? null : () async { final data = <String, dynamic>{}; for (final f in fields) { final valu",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 625,
+    "component": "_ResourceState",
+    "event": "onChanged",
+    "action_source": "(value) => controllers[f]!.text = value ?? '', ) : TextField( controller: controllers[f],",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 630,
+    "component": "_ResourceState",
+    "event": "onChanged",
+    "action_source": "(_) => change(() {}), maxLines: f == 'body' ? 5 : 1, decoration: InputDecoration( labelText: f.replaceAll('_', ' '),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 650,
+    "component": "_ResourceState",
+    "event": "onChanged",
+    "action_source": "(v) => status = v!, ), CheckboxListTile( title: const Text('Demonstration content'), value: demo, onChanged: (v)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 655,
+    "component": "_ResourceState",
+    "event": "onChanged",
+    "action_source": "(v) => change(() => demo = v!), ), ], if (error != null) Text(error!, style: const TextStyle(color: Colors.red)), if (kind ==",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 684,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, false), child: const Text('Cancel'), ), FilledButton( onPressed: () => Navigator.pop(ctx, true), child: const Text('Re",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 688,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, true), child: const Text('Remove'), ), ], child: const Text( 'Content is archived; structural records are deleted when unrefer",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 718,
+    "component": "_ResourceState",
+    "event": "onSubmitted",
+    "action_source": "(q) => setState(() { search = q; page = 1; load(); }), ), ), if (!widget.readOnly) ...[ const",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 727,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "edit), ], ], ), const SizedBox(height: 16), Expanded( child: FutureBuilder<ApiPage>( future: future, builder: (_, s) { if (",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 796,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "() => edit(x), icon: const Icon( Icons.edit_outlined,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 803,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "() => remove(x), icon: const Icon(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 833,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "page <= 1 ? null : () => setState(() { page--; load(); }),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 843,
+    "component": "_ResourceState",
+    "event": "onPressed",
+    "action_source": "page * 20 >= data.total ? null : () => setState(() { page++; load();",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 892,
+    "component": "_UsersState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, false), child: const Text('Cancel'), ), FilledButton( onPressed: () async { try { await",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 896,
+    "component": "_UsersState",
+    "event": "onPressed",
+    "action_source": "() async { try { await ref.read(apiProvider).put( '/admin/users/${user['id']}', {'status': status, 'roles': roles.toList()},",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 919,
+    "component": "_UsersState",
+    "event": "onChanged",
+    "action_source": "(v) => status = v!, ), ...['user', 'content_editor', 'admin', 'super_admin'].map( (r) => CheckboxListTile( title: Text(r),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 925,
+    "component": "_UsersState",
+    "event": "onChanged",
+    "action_source": "(v) => change(() { v! ? roles.add(r) : roles.remove(r); }), ), ), const Text( 'Role changes require a",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 949,
+    "component": "_UsersState",
+    "event": "onSubmitted",
+    "action_source": "(s) => setState(() { q = s; page = 1; load(); }), ), const SizedBox(height: 16), Expanded( child: FutureBuilder<ApiPage>( fut",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 976,
+    "component": "_UsersState",
+    "event": "onPressed",
+    "action_source": "() => edit(x), icon: const Icon(Icons.edit_outlined), ), ), ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 992,
+    "component": "_UsersState",
+    "event": "onPressed",
+    "action_source": "page == 1 ? null : () => setState(() { page--; load(); }),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 1001,
+    "component": "_UsersState",
+    "event": "onPressed",
+    "action_source": "page * 20 >= s.data!.total ? null : () => setState(() { page++; load();",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\app.dart",
+    "line": 1069,
+    "component": "_SettingsState",
+    "event": "onPressed",
+    "action_source": "() async { try { await ref.read(apiProvider).put('/admin/settings', { 'key': 'identity', 'value': {'name': name.text},",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 114,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, false), child: const Text('Cancel'), ), FilledButton( onPressed: () => Navigator.pop(ctx, true), child: const Text('Co",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 118,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, true), child: const Text('Confirm'), ), ], child: Text( action == 'approve' ? 'Confirm the extraction, source au",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 148,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx), child: const Text('Close'), ), ], child: Column( crossAxisAlignment: CrossAxisAlignment.stretch, mainAxisSize: Main",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 199,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() => preview(v), child: const Text('Preview PDF'), ), if (v['processing_status'] == 'ready')",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 204,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() { Navigator.pop(ctx); action( doc, 'approve',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 215,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() { Navigator.pop(ctx); action(doc, 'reject', version: v['id'] as String); }, chil",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 223,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() { Navigator.pop(ctx); action( doc, 'supersede',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 235,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() { Navigator.pop(ctx); action( doc, 'retry',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 287,
+    "component": "_KnowledgeState",
+    "event": "onChanged",
+    "action_source": "(v) { onChanged(v!); page = 1; refresh(); }, ), ); Widget documents(Json data) { final items = (data['items'] as List) .map((x) => Json.from(x as Map",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 308,
+    "component": "_KnowledgeState",
+    "event": "onSubmitted",
+    "action_source": "(v) { query = v; page = 1; refresh(); }, ), ), filter('Subject', subject, subjects, (v) =>",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 329,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "() => upload()), ], ), const SizedBox(height: 16), Expanded( child: items.isEmpty ? const DSBEmptyState( 'Upload your first",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 368,
+    "component": "_KnowledgeState",
+    "event": "onTap",
+    "action_source": "() => details(d), ), DataCell( Text('${d['subject']}\\n${d['scope']}'),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 391,
+    "component": "_KnowledgeState",
+    "event": "onSelected",
+    "action_source": "(a) { if (a == 'view') { details(d); } else if (a == 'replace') {",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 443,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "page <= 1 ? null : () { page--; refresh(); }, icon: const Icon(Icons.chevron_left), ), IconButton( to",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 453,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "page * 20 >= (d['total'] as int) ? null : () { page++; refresh(); }, icon: const Icon(Icons.chevron_right), ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 574,
+    "component": "_KnowledgeState",
+    "event": "onPressed",
+    "action_source": "refresh, icon: const Icon(Icons.refresh), ), ], ), const SizedBox(height: 8), SingleChildScrollView( scrollDirection: Axis.horizontal,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 593,
+    "component": "_KnowledgeState",
+    "event": "onTap",
+    "action_source": "() { setState(() { tab = i; page = 1; error = null; load(); }); }, ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 797,
+    "component": "_UploadState",
+    "event": "onChanged",
+    "action_source": "busy ? null : (v) => changed(v!), ), ); @override Widget build(BuildContext context) => DSBDialog( title: widget.edit ? 'Edit pending metadata' : widget.document == null",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 809,
+    "component": "_UploadState",
+    "event": "onPressed",
+    "action_source": "busy ? null : () => Navigator.pop(context, false), child: const Text('Cancel'), ), DSBPrimaryButton( widget.edit ? 'Save metadata' : 'Upload & queue indexing', loa",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 815,
+    "component": "_UploadState",
+    "event": "onPressed",
+    "action_source": "save, ), ], child: Column( mainAxisSize: MainAxisSize.min, children: [ if (!widget.edit) DropTarget( onDragEntered: (_) => setState(() => drag",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 838,
+    "component": "_UploadState",
+    "event": "onTap",
+    "action_source": "busy ? null : choose, child: Container( width: double.infinity, padding: const EdgeInsets.all(24), margin: const EdgeInsets.only(bottom:",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 916,
+    "component": "_UploadState",
+    "event": "onChanged",
+    "action_source": "(v) => organization = v, ), if (scope == 'client') DropdownButtonFormField<String>( initialValue: company, isExpanded: true, decoration",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 931,
+    "component": "_UploadState",
+    "event": "onChanged",
+    "action_source": "(v) => company = v, ), ...[ 'publication_date', 'effective_from', 'effective_to', 'applicable_periods', 'description', 'k",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 1007,
+    "component": "_PreviewState",
+    "event": "onPressed",
+    "action_source": "page <= 1 ? null : () { page--; load(); }, icon: const Icon(Icons.chevron_left), ), IconButton( toolt",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 1017,
+    "component": "_PreviewState",
+    "event": "onPressed",
+    "action_source": "page >= (widget.version['page_count'] as int? ?? 0) ? null : () { page++; load(); }, icon: const Icon(Icons.chevron_right",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 1026,
+    "component": "_PreviewState",
+    "event": "onPressed",
+    "action_source": "() async { try { final r = await widget.api.get( '/ai/documents/${widget.version['id']}/download', ); await launchUrl( Uri.pa",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 1043,
+    "component": "_PreviewState",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(context), child: const Text('Close'), ), ], child: loading ? const DSBLoadingState() : error != null ? DSBErrorState(error!)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 1158,
+    "component": "_SettingsState",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() => config['feedback_enabled'] = v), ), if (error != null) DSBErrorState(error!), DSBPrimaryButton( 'Save new audited configuration version', loadi",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\knowledge.dart",
+    "line": 1164,
+    "component": "_SettingsState",
+    "event": "onPressed",
+    "action_source": "save, ), const SizedBox(height: 20), const Text( 'Configuration history', style: TextStyle(fontWeight: FontWeight.bold), ), ...((widget.data['history'] a",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 145,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => attachAsset(controllers, change), icon: const Icon(Icons.upload_file), label: const Text('Attach private file'), ), TextButton(",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 150,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx), child: const Text('Cancel'), ), FilledButton( onPressed: () { try { Navigator.pop(ctx,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 154,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() { try { Navigator.pop(ctx, { for (final e in controllers.entries) e.key: jsonFields.contains(e.key)",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 224,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx), child: const Text('Close'), ), ], child: SelectableText(const JsonEncoder.withIndent(' ').convert(item)), ), ); } Futur",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 250,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx), child: const Text('Close'), ), ], child: Column( mainAxisSize: MainAxisSize.min, children: [",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 265,
+    "component": "_ProfessionalAdmin",
+    "event": "onTap",
+    "action_source": "() { Navigator.pop(ctx); editRule(Json.from(t as Map)); }, ), ), ], ), ), )",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 465,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx), child: const Text('Close'), ), TextButton( onPressed: () async { final response = await widget.api.dio.ge",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 469,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() async { final response = await widget.api.dio.get<String>( '/admin/professional/webinars/${event['id']}/attendees.csv', ); await S",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 524,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, false), child: const Text('Cancel'), ), FilledButton( onPressed: () => Navigator.pop(ctx, true), child: const Text('Ar",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 528,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => Navigator.pop(ctx, true), child: const Text('Archive'), ), ], child: const Text( 'The resource will be removed from published listings. Existing",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 572,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => inspect(x), icon: const Icon(Icons.info_outline), ), if (tab == 0 || tab == 2) ...[ TextButton( onPressed: () => action('/admin/professional/",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 577,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => action('/admin/professional/rules/${x['id']}/validate'), child: const Text('Validate'), ), TextButton( onPressed: () => action('/",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 582,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => action('/admin/professional/rules/${x['id']}/publish'), child: const Text('Publish reviewed'), ), TextButton( onPressed: () => ac",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 587,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => action('/admin/professional/rules/${x['id']}/supersede'), child: const Text('Supersede'), ), TextButton( onPressed: () => editRul",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 592,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => editRule({...x, 'version': '${x['version']}-revision'}), child: const Text('New version'), ), ], if (tab == 1 || tab == 3 || tab == 4) IconBu",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 600,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => editContent(x), icon: const Icon(Icons.edit_outlined), ), if (tab == 3) for (final actionName in [ 'review', 'approve', 'publish',",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 612,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => action( '/admin/professional/updates/${x['id']}/workflow', data: {'action': actionName}, ), child: Text(actionName), ), if (t",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 620,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => affectedSources(x), child: const Text('Affected AI / learning sources'), ), if (tab == 1 || tab == 4) TextButton( onPressed: () => archiveContent(x),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 625,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => archiveContent(x), child: const Text('Archive'), ), if (tab == 1 && kind == 'chapters') TextButton( onPressed: () => chapterOrder(x), child:",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 630,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => chapterOrder(x), child: const Text('Reorder chapters'), ), if (tab == 4) TextButton( onPressed: () => registrations(x), child: const Text('Re",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 635,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => registrations(x), child: const Text('Registrations'), ), if (tab == 5 && ['failed', 'blocked'].contains(x['status'])) TextButton( onPressed: () =>",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 640,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => action('/admin/professional/notifications/${x['id']}/retry'), child: const Text('Retry'), ), ], ); @override Widget build(BuildContext context) => Colu",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 662,
+    "component": "_ProfessionalAdmin",
+    "event": "onSelected",
+    "action_source": "(_) => setState(() { tab = i; page = 1; error = null; load(); }), ), ), ),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 681,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "templateRules, child: const Text('Create rule from source template'), ), OutlinedButton( onPressed: () => editRule({}), child: const",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 685,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => editRule({}), child: const Text('New rule version'), ), ], if (tab == 1) ...[ DropdownButton<String>( value: kind,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 701,
+    "component": "_ProfessionalAdmin",
+    "event": "onChanged",
+    "action_source": "(v) => setState(() { kind = v!; page = 1; load(); }), ), FilledButton( onPressed: () => editContent",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 708,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => editContent(), child: const Text('Create learning content'), ), ], if (tab == 3 || tab == 4) FilledButton( onPressed: ()",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 714,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "() => editContent(), child: Text( tab == 3 ? 'Draft regulatory update' : 'Create webinar', ), ), if (tab == 5) ...[ Fille",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 721,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "campaign, child: const Text('Queue in-app campaign'), ), OutlinedButton( onPressed: notificationTemplate, child: const Text('Save del",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 725,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "notificationTemplate, child: const Text('Save delivery template'), ), ], IconButton( tooltip: 'Refresh', onPressed: refresh,",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 731,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "refresh, icon: const Icon(Icons.refresh), ), ], ), const SizedBox(height: 10), if (tab != 6) TextField( decoration: const InputDecora",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 740,
+    "component": "_ProfessionalAdmin",
+    "event": "onSubmitted",
+    "action_source": "(value) => setState(() { search = value; page = 1; load(); }), ), if (error != null) DSBErrorState(error!), const SizedBox(height: 12",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 874,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "page > 1 ? () => setState(() { page--; load(); }) : null, child: const Text('Previous'),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  },
+  {
+    "file": "apps\\dsbca_admin\\lib\\professional.dart",
+    "line": 884,
+    "component": "_ProfessionalAdmin",
+    "event": "onPressed",
+    "action_source": "page * 20 < total ? () => setState(() { page++; load(); }) : null, child: const Text('Next'),",
+    "permission": "Endpoint role/ownership enforced; see routes.json",
+    "test_status": "Source inventory; responsive suite covers screen. Manual subset is separately logged."
+  }
+]

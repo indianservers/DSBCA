@@ -1,0 +1,804 @@
+{
+  "items": [
+    {
+      "code": "corporate_tax",
+      "title": "UAE Corporate Tax",
+      "group": "Tax",
+      "rule_required": true,
+      "fields": [
+        {
+          "key": "period_start",
+          "label": "Financial period start",
+          "default": "2026-01-01",
+          "type": "date"
+        },
+        {
+          "key": "period_end",
+          "label": "Financial period end",
+          "default": "2026-12-31",
+          "type": "date"
+        },
+        {
+          "key": "accounting_profit",
+          "label": "Accounting profit / loss",
+          "default": "900000",
+          "type": "number"
+        },
+        {
+          "key": "exempt_income",
+          "label": "Exempt income",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "non_deductible",
+          "label": "Non-deductible expenses",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "adjustments",
+          "label": "Signed taxable adjustments",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "losses_brought_forward",
+          "label": "Eligible losses brought forward",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "losses_requested",
+          "label": "Eligible losses to use",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "treatment",
+          "label": "Tax treatment",
+          "default": "standard",
+          "type": "select",
+          "options": [
+            "standard",
+            "free_zone",
+            "special"
+          ]
+        },
+        {
+          "key": "sbr_elected",
+          "label": "Elect Small Business Relief",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "revenue",
+          "label": "Current period revenue",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "resident",
+          "label": "UAE resident person",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "prior_revenue_eligible",
+          "label": "All relevant prior revenues meet SBR limit",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "not_qfzp",
+          "label": "Not a QFZP",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "not_large_mne",
+          "label": "Not an excluded large MNE member",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "sbr_conditions_confirmed",
+          "label": "All other SBR conditions verified",
+          "default": false,
+          "type": "bool"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "vat",
+      "title": "UAE VAT",
+      "group": "Tax",
+      "rule_required": true,
+      "fields": [
+        {
+          "key": "period_start",
+          "label": "Financial period start",
+          "default": "2026-01-01",
+          "type": "date"
+        },
+        {
+          "key": "period_end",
+          "label": "Financial period end",
+          "default": "2026-12-31",
+          "type": "date"
+        },
+        {
+          "key": "amount",
+          "label": "Transaction amount (AED)",
+          "default": "10000",
+          "type": "number"
+        },
+        {
+          "key": "treatment",
+          "label": "Treatment",
+          "default": "standard",
+          "type": "select",
+          "options": [
+            "standard",
+            "zero",
+            "exempt",
+            "out_of_scope"
+          ]
+        },
+        {
+          "key": "inclusive",
+          "label": "Amount includes VAT",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "direction",
+          "label": "Direction",
+          "default": "output",
+          "type": "select",
+          "options": [
+            "output",
+            "input"
+          ]
+        },
+        {
+          "key": "recoverable",
+          "label": "Input VAT recoverable",
+          "default": true,
+          "type": "bool"
+        },
+        {
+          "key": "transactions",
+          "label": "Optional transaction array (overrides single amount)",
+          "default": "",
+          "type": "json"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "qfzp",
+      "title": "QFZP assessment studio",
+      "group": "Tax",
+      "rule_required": true,
+      "fields": [
+        {
+          "key": "period_start",
+          "label": "Financial period start",
+          "default": "2026-01-01",
+          "type": "date"
+        },
+        {
+          "key": "period_end",
+          "label": "Financial period end",
+          "default": "2026-12-31",
+          "type": "date"
+        },
+        {
+          "key": "total_revenue",
+          "label": "Total revenue",
+          "default": "20000000",
+          "type": "number"
+        },
+        {
+          "key": "non_qualifying",
+          "label": "Non-qualifying revenue excluding next field",
+          "default": "3000000",
+          "type": "number"
+        },
+        {
+          "key": "excluded_activity",
+          "label": "Excluded-activity revenue (no double counting)",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "excluded_from_denominator",
+          "label": "Verified statutory revenue exclusions",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "qualifying_income",
+          "label": "Reported qualifying income",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "adequate_substance",
+          "label": "Adequate substance",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "qualifying_activities",
+          "label": "Qualifying activities",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "transfer_pricing_compliance",
+          "label": "Transfer pricing compliance",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "audited_financials",
+          "label": "Audited financials",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "no_standard_election",
+          "label": "No standard election",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "revenue_classification_verified",
+          "label": "Revenue classification verified",
+          "default": false,
+          "type": "bool"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "gratuity",
+      "title": "UAE end-of-service gratuity",
+      "group": "Employment",
+      "rule_required": true,
+      "fields": [
+        {
+          "key": "employment_start",
+          "label": "Employment start",
+          "default": "2020-01-01",
+          "type": "date"
+        },
+        {
+          "key": "employment_end",
+          "label": "Employment end",
+          "default": "2026-01-01",
+          "type": "date"
+        },
+        {
+          "key": "monthly_basic",
+          "label": "Monthly basic salary",
+          "default": "15000",
+          "type": "number"
+        },
+        {
+          "key": "monthly_total_wage",
+          "label": "Monthly total wage for statutory cap",
+          "default": "15000",
+          "type": "number"
+        },
+        {
+          "key": "unpaid_days",
+          "label": "Unpaid absence days",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "regime",
+          "label": "Legal regime",
+          "default": "federal",
+          "type": "select",
+          "options": [
+            "federal",
+            "DIFC",
+            "ADGM",
+            "other"
+          ]
+        },
+        {
+          "key": "arrangement",
+          "label": "Employment arrangement",
+          "default": "full_time",
+          "type": "select",
+          "options": [
+            "full_time",
+            "part_time",
+            "savings_scheme"
+          ]
+        },
+        {
+          "key": "worker",
+          "label": "Worker classification",
+          "default": "foreign",
+          "type": "select",
+          "options": [
+            "foreign",
+            "national"
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "tp_range",
+      "title": "Arm\u2019s length range",
+      "group": "Transfer Pricing",
+      "fields": [
+        {
+          "key": "metric",
+          "label": "Financial metric and unit",
+          "default": "Operating margin (%)",
+          "type": "text"
+        },
+        {
+          "key": "observations",
+          "label": "Comparable observations (JSON array)",
+          "default": "[2,4,6,8,10]",
+          "type": "json"
+        },
+        {
+          "key": "tested_party",
+          "label": "Tested party result",
+          "default": "5",
+          "type": "number"
+        },
+        {
+          "key": "method",
+          "label": "Percentile interpolation",
+          "default": "inclusive",
+          "type": "select",
+          "options": [
+            "inclusive",
+            "exclusive"
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "interest_benchmark",
+      "title": "Interest rate benchmarking",
+      "group": "Transfer Pricing",
+      "fields": [
+        {
+          "key": "principal",
+          "label": "Principal / carrying amount",
+          "default": "100000",
+          "type": "number"
+        },
+        {
+          "key": "periods",
+          "label": "Number of payments",
+          "default": "36",
+          "type": "number"
+        },
+        {
+          "key": "periods_per_year",
+          "label": "Payments per year",
+          "default": "12",
+          "type": "number"
+        },
+        {
+          "key": "currency",
+          "label": "Currency",
+          "default": "AED",
+          "type": "text"
+        },
+        {
+          "key": "loan_date",
+          "label": "Loan date",
+          "default": "2026-01-01",
+          "type": "date"
+        },
+        {
+          "key": "benchmark_rate",
+          "label": "User-supplied reference rate (decimal)",
+          "default": "",
+          "type": "number"
+        },
+        {
+          "key": "spread",
+          "label": "Spread (decimal)",
+          "default": "0.02",
+          "type": "number"
+        },
+        {
+          "key": "range_low",
+          "label": "Approved range lower rate",
+          "default": "",
+          "type": "number"
+        },
+        {
+          "key": "range_high",
+          "label": "Approved range upper rate",
+          "default": "",
+          "type": "number"
+        },
+        {
+          "key": "repayment_profile",
+          "label": "Repayment profile",
+          "default": "amortizing",
+          "type": "select",
+          "options": [
+            "amortizing",
+            "bullet"
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "tp_documentation",
+      "title": "TP documentation assessment",
+      "group": "Transfer Pricing",
+      "rule_required": true,
+      "fields": [
+        {
+          "key": "period_start",
+          "label": "Financial period start",
+          "default": "2026-01-01",
+          "type": "date"
+        },
+        {
+          "key": "period_end",
+          "label": "Financial period end",
+          "default": "2026-12-31",
+          "type": "date"
+        },
+        {
+          "key": "revenue",
+          "label": "Entity revenue",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "group_revenue",
+          "label": "Consolidated MNE revenue (AED)",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "mne_member",
+          "label": "Member of an MNE group",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "related_transactions",
+          "label": "Related-party transaction value",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "connected_payments",
+          "label": "Connected-person payments",
+          "default": "0",
+          "type": "number"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "pillar_two",
+      "title": "Pillar Two / UAE DMTT screening",
+      "group": "Pillar Two",
+      "rule_required": true,
+      "fields": [
+        {
+          "key": "period_start",
+          "label": "Financial period start",
+          "default": "2026-01-01",
+          "type": "date"
+        },
+        {
+          "key": "period_end",
+          "label": "Financial period end",
+          "default": "2026-12-31",
+          "type": "date"
+        },
+        {
+          "key": "prior_revenues",
+          "label": "Four prior-year group revenues in EUR",
+          "default": "[0,0,0,0]",
+          "type": "json"
+        },
+        {
+          "key": "mne_group",
+          "label": "Multinational enterprise group",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "globe_income",
+          "label": "Jurisdictional GloBE income / loss",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "covered_taxes",
+          "label": "Adjusted covered taxes",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "deferred_tax",
+          "label": "Eligible deferred tax adjustment",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "substance_exclusion",
+          "label": "Verified substance-based exclusion",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "adjustment_flags",
+          "label": "Outstanding elections / adjustment flags",
+          "default": "[]",
+          "type": "json"
+        },
+        {
+          "key": "cbcr_data_qualified",
+          "label": "Qualified CbCR data and eligibility verified",
+          "default": false,
+          "type": "bool"
+        },
+        {
+          "key": "cbcr_average_revenue",
+          "label": "Three-year average CbCR revenue (EUR)",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "cbcr_average_profit",
+          "label": "Three-year average CbCR profit / loss (EUR)",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "cbcr_profit",
+          "label": "CbCR current profit / loss (EUR)",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "cbcr_simplified_taxes",
+          "label": "Simplified covered taxes (EUR)",
+          "default": "0",
+          "type": "number"
+        },
+        {
+          "key": "cbcr_substance_exclusion",
+          "label": "Verified CbCR substance exclusion (EUR)",
+          "default": "0",
+          "type": "number"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "lease",
+      "title": "IFRS 16 lease liability",
+      "group": "IFRS",
+      "fields": [
+        {
+          "key": "annual_rate",
+          "label": "Nominal annual rate (decimal)",
+          "default": "0.06",
+          "type": "number"
+        },
+        {
+          "key": "periods",
+          "label": "Number of payments",
+          "default": "36",
+          "type": "number"
+        },
+        {
+          "key": "periods_per_year",
+          "label": "Payments per year",
+          "default": "12",
+          "type": "number"
+        },
+        {
+          "key": "payment",
+          "label": "Fixed periodic lease payment",
+          "default": "3000",
+          "type": "number"
+        },
+        {
+          "key": "timing",
+          "label": "Payment timing",
+          "default": "arrears",
+          "type": "select",
+          "options": [
+            "arrears",
+            "advance"
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "effective_interest",
+      "title": "Effective interest method",
+      "group": "IFRS",
+      "fields": [
+        {
+          "key": "principal",
+          "label": "Principal / carrying amount",
+          "default": "100000",
+          "type": "number"
+        },
+        {
+          "key": "annual_rate",
+          "label": "Nominal annual rate (decimal)",
+          "default": "0.06",
+          "type": "number"
+        },
+        {
+          "key": "periods",
+          "label": "Number of payments",
+          "default": "36",
+          "type": "number"
+        },
+        {
+          "key": "periods_per_year",
+          "label": "Payments per year",
+          "default": "12",
+          "type": "number"
+        },
+        {
+          "key": "cash_payment",
+          "label": "Periodic contractual cash payment",
+          "default": "3000",
+          "type": "number"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "npv",
+      "title": "Present value / NPV",
+      "group": "IFRS",
+      "fields": [
+        {
+          "key": "discount_rate",
+          "label": "Rate per cash-flow period (decimal)",
+          "default": "0.08",
+          "type": "number"
+        },
+        {
+          "key": "cashflows",
+          "label": "Equal-period cash flows including time zero",
+          "default": "[-100000,40000,40000,40000]",
+          "type": "json"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "depreciation",
+      "title": "Depreciation schedule",
+      "group": "IFRS",
+      "fields": [
+        {
+          "key": "cost",
+          "label": "Asset cost",
+          "default": "100000",
+          "type": "number"
+        },
+        {
+          "key": "residual",
+          "label": "Residual value",
+          "default": "10000",
+          "type": "number"
+        },
+        {
+          "key": "periods",
+          "label": "Useful life in periods",
+          "default": "5",
+          "type": "number"
+        },
+        {
+          "key": "method",
+          "label": "Method",
+          "default": "straight_line",
+          "type": "select",
+          "options": [
+            "straight_line",
+            "reducing_balance"
+          ]
+        },
+        {
+          "key": "reducing_rate",
+          "label": "Reducing-balance rate (decimal)",
+          "default": "0.2",
+          "type": "number"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "impairment",
+      "title": "Asset impairment sensitivity",
+      "group": "IFRS",
+      "fields": [
+        {
+          "key": "carrying",
+          "label": "Carrying amount",
+          "default": "100000",
+          "type": "number"
+        },
+        {
+          "key": "fair_value_less_costs",
+          "label": "Fair value less costs of disposal",
+          "default": "80000",
+          "type": "number"
+        },
+        {
+          "key": "value_in_use",
+          "label": "Value in use",
+          "default": "90000",
+          "type": "number"
+        },
+        {
+          "key": "sensitivity",
+          "label": "Downside VIU reduction (decimal)",
+          "default": "0.1",
+          "type": "number"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "code": "loan",
+      "title": "Loan amortization",
+      "group": "IFRS",
+      "fields": [
+        {
+          "key": "principal",
+          "label": "Principal / carrying amount",
+          "default": "100000",
+          "type": "number"
+        },
+        {
+          "key": "annual_rate",
+          "label": "Nominal annual rate (decimal)",
+          "default": "0.06",
+          "type": "number"
+        },
+        {
+          "key": "periods",
+          "label": "Number of payments",
+          "default": "36",
+          "type": "number"
+        },
+        {
+          "key": "periods_per_year",
+          "label": "Payments per year",
+          "default": "12",
+          "type": "number"
+        }
+      ],
+      "rules": []
+    }
+  ]
+}

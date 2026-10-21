@@ -1,0 +1,37 @@
+Browser tab: 8, Title: "DSBCA Administration", URL: "http://localhost:5304/#/users".
+0 AXWebArea DSBCA Administration, URL: localhost:5304/#/users
+	1 container
+		2 container flt-semantic-node-10
+			3 container flt-semantic-node-26
+				4 heading Users, Value: 2, ID: flt-semantic-node-27
+					30 text Users
+				6 text Development Operator
+			7 text DSB
+			31 text field (settable) Search users by email
+			8 text ADMINISTRATION
+			18 container flt-semantic-node-24
+				19 button Overview, ID: flt-semantic-node-14
+				20 button Users, ID: flt-semantic-node-15
+				21 button Learning content, ID: flt-semantic-node-16
+				22 button Regulatory updates, ID: flt-semantic-node-17
+				23 button Notifications, ID: flt-semantic-node-18
+				24 button Compliance overview, ID: flt-semantic-node-19
+				25 button Settings, ID: flt-semantic-node-20
+				26 button Audit logs, ID: flt-semantic-node-21
+				27 button AI Knowledge Base, ID: flt-semantic-node-22
+				28 button Professional platform, ID: flt-semantic-node-23
+			29 button Sign out, ID: flt-semantic-node-25
+			32 container flt-semantic-node-630
+				33 container Description: qa-editor-0a9e1ed1@example.com active Â· content_editor, ID: flt-semantic-node-616
+					34 button Edit account, ID: flt-semantic-node-617
+				35 container Description: qa-reader2-3f39c612@example.com active Â· user, ID: flt-semantic-node-619
+					36 button Edit account, ID: flt-semantic-node-620
+				37 container Description: phase3-reader-4fb26b8f@example.com active Â· user, ID: flt-semantic-node-622
+					38 button Edit account, ID: flt-semantic-node-623
+				39 container Description: phase3-reviewer-deaec97c@example.com active Â· admin, ID: flt-semantic-node-625
+					40 button Edit account, ID: flt-semantic-node-626
+				41 container Description: phase3-operator-868b74d6@example.com active Â· user, super_admin, ID: flt-semantic-node-628
+					42 button Edit account, ID: flt-semantic-node-629
+			43 text Page 1 · 5 users
+
+The focused UI element is 20 button Users, ID: flt-semantic-node-15

@@ -1,0 +1,35 @@
+{
+  "production_approved": false,
+  "artifacts": [
+    {
+      "file": "output\\release\\dsbca-user-phase4-web-qa.zip",
+      "kind": "Flutter Web JavaScript release build for local QA",
+      "bytes": 11911182,
+      "sha256": "6e68ffd4e759490d62a11e0fc9b491e296e824093b1d95f421cc9295f3f907d9",
+      "api_origin": "http://localhost:8004"
+    },
+    {
+      "file": "output\\release\\dsbca-user-phase4-qa-debug.apk",
+      "kind": "Internal QA Android debug APK; not a store release",
+      "bytes": 175723436,
+      "sha256": "358739080f224b5fa73b2cbcd66ab971c292e4052cb5629fcc833c9c8f63c2b1",
+      "api_origin": "http://10.0.2.2:8004"
+    },
+    {
+      "file": "output\\release\\dsbca-admin-phase4-web-qa.zip",
+      "kind": "Flutter Web JavaScript release build for local QA",
+      "bytes": 11796685,
+      "sha256": "61e177704b3f92be57fa66e3068ae51cf957324580649a6baa789a0b9763714e",
+      "api_origin": "http://localhost:8004"
+    },
+    {
+      "file": "output\\release\\dsbca-admin-phase4-qa-debug.apk",
+      "kind": "Internal QA Android debug APK; not a store release",
+      "bytes": 174410498,
+      "sha256": "40070fb286433afbc795d5ce08d579ceeb895a59df281711082ddf07accfb9d1",
+      "api_origin": "http://10.0.2.2:8004"
+    }
+  ],
+  "aab": "not generated; owner signing configuration absent",
+  "ios": "not generated; macOS/Xcode/signing absent"
+}

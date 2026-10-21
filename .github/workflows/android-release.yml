@@ -1,0 +1,39 @@
+name: Owner-signed Android release
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    environment: android-release
+    runs-on: ubuntu-latest
+    env:
+      API_BASE_URL: ${{ vars.API_BASE_URL }}
+      ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+      DSBCA_ANDROID_KEYSTORE: ${{ runner.temp }}/dsbca-release.jks
+      DSBCA_ANDROID_STORE_PASSWORD: ${{ secrets.DSBCA_ANDROID_STORE_PASSWORD }}
+      DSBCA_ANDROID_KEY_ALIAS: ${{ secrets.DSBCA_ANDROID_KEY_ALIAS }}
+      DSBCA_ANDROID_KEY_PASSWORD: ${{ secrets.DSBCA_ANDROID_KEY_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.5'
+          channel: stable
+      - name: Validate owner-supplied signing material
+        shell: bash
+        run: |
+          [[ "$API_BASE_URL" == https://* ]] || exit 1
+          test -n "$ANDROID_KEYSTORE_BASE64" && test -n "$DSBCA_ANDROID_STORE_PASSWORD" && test -n "$DSBCA_ANDROID_KEY_ALIAS" && test -n "$DSBCA_ANDROID_KEY_PASSWORD"
+          printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$DSBCA_ANDROID_KEYSTORE"
+      - run: flutter pub get --enforce-lockfile && flutter analyze && flutter test && flutter build appbundle --release --dart-define="API_BASE_URL=$API_BASE_URL"
+        working-directory: apps/dsbca_user
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dsbca-user-owner-signed-aab
+          path: apps/dsbca_user/build/app/outputs/bundle/release/app-release.aab

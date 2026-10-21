@@ -1,0 +1,41 @@
+{
+  "workflow_syntax": {
+    ".github\\workflows\\android-release.yml": "parsed; hosted execution not performed",
+    ".github\\workflows\\deploy.yml": "parsed; hosted execution not performed",
+    ".github\\workflows\\preview.yml": "parsed; hosted execution not performed",
+    ".github\\workflows\\verify.yml": "parsed; hosted execution not performed"
+  },
+  "vercel_json": {
+    "backend\\vercel.json": "parsed; CLI deployment/bundle validation requires account/project configuration",
+    "apps\\dsbca_user\\vercel.json": "parsed; CLI deployment/bundle validation requires account/project configuration",
+    "apps\\dsbca_admin\\vercel.json": "parsed; CLI deployment/bundle validation requires account/project configuration"
+  },
+  "ios_plists": {
+    "dsbca_user": {
+      "display_name": "DSBCA",
+      "arbitrary_loads": false,
+      "url_schemes": [
+        "dsbca"
+      ]
+    },
+    "dsbca_admin": {
+      "display_name": "DSBCA Admin",
+      "arbitrary_loads": false,
+      "url_schemes": [
+        "dsbca-admin"
+      ]
+    }
+  },
+  "android_manifests": {
+    "dsbca_user/main": "XML parsed; see actual Gradle results",
+    "dsbca_user/debug": "XML parsed; see actual Gradle results",
+    "dsbca_admin/main": "XML parsed; see actual Gradle results",
+    "dsbca_admin/debug": "XML parsed; see actual Gradle results"
+  },
+  "linux_runtime_wheels": {
+    "count": 58,
+    "download_bytes": 58403046,
+    "uncompressed_bytes": 145400973,
+    "target": "CPython 3.12 manylinux x86_64; download compatibility only, not execution"
+  }
+}

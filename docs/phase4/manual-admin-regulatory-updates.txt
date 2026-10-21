@@ -1,0 +1,76 @@
+Browser tab: 8, Title: "DSBCA Administration", URL: "http://localhost:5304/#/updates".
+0 AXWebArea DSBCA Administration, URL: localhost:5304/#/updates
+	1 container
+		2 container flt-semantic-node-10
+			3 container flt-semantic-node-26
+				4 heading Regulatory updates, Value: 2, ID: flt-semantic-node-27
+					30 text Regulatory updates
+				6 text Development Operator
+			7 text DSB
+			8 text ADMINISTRATION
+			31 text Professional administration
+			32 container flt-semantic-node-635
+				33 checkbox Description: Calculator rules, Value: 0, ID: flt-semantic-node-636
+				34 checkbox Description: Learning academy, Value: 0, ID: flt-semantic-node-637
+				35 checkbox Description: Compliance rules, Value: 0, ID: flt-semantic-node-638
+				36 checkbox Description: Regulatory review, Value: 1, ID: flt-semantic-node-639
+				37 checkbox Description: Webinars, Value: 0, ID: flt-semantic-node-640
+				38 checkbox Description: Delivery center, Value: 0, ID: flt-semantic-node-641
+				39 checkbox Description: Metrics, Value: 0, ID: flt-semantic-node-642
+			18 container flt-semantic-node-24
+				19 button Overview, ID: flt-semantic-node-14
+				20 button Users, ID: flt-semantic-node-15
+				21 button Learning content, ID: flt-semantic-node-16
+				22 button Regulatory updates, ID: flt-semantic-node-17
+				23 button Notifications, ID: flt-semantic-node-18
+				24 button Compliance overview, ID: flt-semantic-node-19
+				25 button Settings, ID: flt-semantic-node-20
+				26 button Audit logs, ID: flt-semantic-node-21
+				27 button AI Knowledge Base, ID: flt-semantic-node-22
+				28 button Professional platform, ID: flt-semantic-node-23
+			29 button Sign out, ID: flt-semantic-node-25
+			40 button Draft regulatory update, ID: flt-semantic-node-643
+			41 button Refresh, ID: flt-semantic-node-644
+			42 text field (settable) Search records
+			43 button (disabled) Previous, ID: flt-semantic-node-646
+			44 text Page 1
+			45 button (disabled) Next, ID: flt-semantic-node-648
+			46 container flt-semantic-node-649
+				47 container flt-semantic-node-650
+					48 table flt-semantic-node-651
+						49 row flt-semantic-node-679
+							50 cell Description: Record, ID: flt-semantic-node-652
+							51 cell Description: Status / version, ID: flt-semantic-node-653
+							52 cell Description: Actions, ID: flt-semantic-node-654
+						53 row flt-semantic-node-680
+							54 cell flt-semantic-node-655
+								55 text Acceptance reviewed source a8e65b21
+							56 cell flt-semantic-node-656
+								57 text published
+							58 cell flt-semantic-node-657
+								59 container flt-semantic-node-658
+									60 button Inspect record, ID: flt-semantic-node-659
+									61 button Edit, ID: flt-semantic-node-660
+									62 button review, ID: flt-semantic-node-661
+									63 button approve, ID: flt-semantic-node-662
+									64 button publish, ID: flt-semantic-node-663
+									65 button supersede, ID: flt-semantic-node-664
+									66 button archive, ID: flt-semantic-node-665
+									67 button Affected AI / learning sources, ID: flt-semantic-node-666
+						68 row flt-semantic-node-681
+							69 cell flt-semantic-node-667
+								70 text Acceptance reviewed source 95253557
+							71 cell flt-semantic-node-668
+								72 text published
+							73 cell flt-semantic-node-669
+								74 container flt-semantic-node-670
+									75 button Inspect record, ID: flt-semantic-node-671
+									76 button Edit, ID: flt-semantic-node-672
+									77 button review, ID: flt-semantic-node-673
+									78 button approve, ID: flt-semantic-node-674
+									79 button publish, ID: flt-semantic-node-675
+									80 button supersede, ID: flt-semantic-node-676
+									81 button archive, ID: flt-semantic-node-677
+									82 button Affected AI / learning sources, ID: flt-semantic-node-678
+
+The focused UI element is 22 button Regulatory updates, ID: flt-semantic-node-17

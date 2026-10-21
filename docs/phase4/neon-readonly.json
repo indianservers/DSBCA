@@ -1,0 +1,12 @@
+{
+  "mode": "read-only metadata audit; no migrations or application-table writes",
+  "configured": true,
+  "pooled_hostname": true,
+  "schema_revision": "0002",
+  "extensions": [
+    "plpgsql"
+  ],
+  "owned_public_tables": 28,
+  "connect_and_metadata_ms": 6823.5,
+  "status": "connected"
+}

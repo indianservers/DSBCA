@@ -1,0 +1,13 @@
+{
+  "environment": "isolated local Phase 3 PostgreSQL + HTTP API",
+  "live_openai": "not configured; typed application tools verified only",
+  "email_push": "not configured; no delivery claim",
+  "checks": {
+    "B": "HTTP calculate/save/reopen succeeded; browser also verified formula and save/history",
+    "C": "HTTP company/licence/reminder scheduling/renewal/history succeeded",
+    "D": "HTTP draft/review/independent approval/publish + actual in-app worker delivery succeeded; official source link returned",
+    "E": "Typed chat calculator + numeric engine match + populated-calculator metadata succeeded; natural-language model selection pending",
+    "F": "Typed chat authorized company expiry retrieval and reminder deep link succeeded; natural-language model selection pending",
+    "G": "HTTP schedule/register/authorized joining metadata/UTC calendar succeeded with fictional room; no live webinar attended"
+  }
+}
