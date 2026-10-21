@@ -2,7 +2,9 @@
 
 Phase 1 foundation, Phase 2 PDF research and Phase 3 professional platform: separate Flutter User and Admin apps, shared Dart packages, FastAPI, SQLAlchemy/Alembic and PostgreSQL. The nine original references in `../targetUI` are preserved.
 
-**Current status:** Phase 4 local hardening and QA are complete: 404 automated tests passed, both Flutter analyzers and web builds passed, and both internal QA debug APKs built. **Production recommendation: NO GO.** See [final release report](docs/FINAL_RELEASE_REPORT.md) and [release blockers](docs/RELEASE_BLOCKERS.md). Shared Neon remains unchanged.
+**Hosted apps:** [User](https://dsbca-user.vercel.app) · [Admin](https://dsbca-admin.vercel.app) · [API docs](https://dsbca.vercel.app/docs). [Deployment record](docs/VERCEL_LIVE_DEPLOYMENT.md).
+
+**Current status:** Phase 4 local hardening and QA are complete: 404 automated tests passed, both Flutter analyzers and web builds passed, and both internal QA debug APKs built. **Production recommendation: NO GO.** See [final release report](docs/FINAL_RELEASE_REPORT.md) and [release blockers](docs/RELEASE_BLOCKERS.md). The owner-approved Neon upgrade is now at 0004. See [live Vercel deployment and remaining activation work](docs/VERCEL_LIVE_DEPLOYMENT.md).
 
 Start with [Windows setup](docs/LOCAL_SETUP.md), [architecture](docs/ARCHITECTURE.md), [database schema](docs/DATABASE_SCHEMA.md), and [deployment](docs/VERCEL_DEPLOYMENT.md).
 

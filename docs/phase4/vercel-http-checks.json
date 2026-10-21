@@ -1,0 +1,37 @@
+{
+  "health": {
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "phase": 4
+    }
+  },
+  "ready": {
+    "status": 200,
+    "body": {
+      "status": "ready",
+      "schema_revision": "0004"
+    }
+  },
+  "https://dsbca-user.vercel.app": {
+    "status": 200,
+    "cors": "https://dsbca-user.vercel.app"
+  },
+  "https://dsbca-admin.vercel.app": {
+    "status": 200,
+    "cors": "https://dsbca-admin.vercel.app"
+  },
+  "unauthenticated_admin": {
+    "status": 401
+  },
+  "untrusted_cors": {
+    "status": 400,
+    "allow_origin": null
+  },
+  "security_headers": {
+    "cache-control": "no-store",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-request-id": "ecb9a3bc5c5f401e84031f3de0e4b8a3"
+  }
+}

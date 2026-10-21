@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-21",
+  "backup": "Ignored local .qa-backups/neon-before-vercel-0002.dump; PostgreSQL 18 custom archive; catalogue verified, restore not exercised",
+  "previous_revision": "0002",
+  "revision": "0004",
+  "pgvector_version": "0.8.6",
+  "user_company_counts_preserved": true,
+  "demo_data_seeded": false,
+  "tls": "verify-full using pinned certifi CA bundle"
+}
