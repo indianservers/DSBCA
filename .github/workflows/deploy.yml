@@ -53,7 +53,7 @@ jobs:
           cd "apps/dsbca_$PROJECT"
           flutter pub get --enforce-lockfile
           flutter build web --release --no-wasm-dry-run --dart-define="API_BASE_URL=$API_BASE_URL"
-          cp vercel.json build/web/vercel.json
+          python -c "import json; c=json.load(open('vercel.json')); c.update(buildCommand=None,outputDirectory='.',installCommand=None); json.dump(c,open('build/web/vercel.json','w'))"
       - name: Deploy approved project
         shell: bash
         run: |
