@@ -1,5 +1,5 @@
 from functools import lru_cache
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
 from app.core.config import settings
 
@@ -30,7 +30,7 @@ def engine():
         import certifi
 
         tls_args["sslrootcert"] = certifi.where()
-    return create_engine(
+    db_engine = create_engine(
         url,
         pool_size=2,
         max_overflow=0,
@@ -40,9 +40,17 @@ def engine():
         connect_args={
             **tls_args,
             "connect_timeout": 8,
-            "options": "-c statement_timeout=15000 -c lock_timeout=5000",
         },
     )
+
+    @event.listens_for(db_engine, "begin")
+    def transaction_timeouts(connection):
+        # Neon transaction pooling rejects startup options. LOCAL settings are
+        # applied to each transaction and cannot leak to another pooled client.
+        connection.exec_driver_sql("SET LOCAL statement_timeout = '15s'")
+        connection.exec_driver_sql("SET LOCAL lock_timeout = '5s'")
+
+    return db_engine
 
 
 def db_session():
