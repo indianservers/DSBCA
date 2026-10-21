@@ -25,7 +25,14 @@ if context.is_offline_mode():
     with context.begin_transaction():
         context.run_migrations()
 else:
-    with create_engine(url, poolclass=pool.NullPool).connect() as connection:
+    tls_args = {}
+    if settings().app_env in {"production", "staging"}:
+        import certifi
+
+        tls_args["sslrootcert"] = certifi.where()
+    with create_engine(
+        url, poolclass=pool.NullPool, connect_args=tls_args
+    ).connect() as connection:
         context.configure(connection=connection, target_metadata=Base.metadata)
         with context.begin_transaction():
             context.run_migrations()

@@ -25,6 +25,11 @@ def engine():
             raise ValueError(
                 "Hosted PostgreSQL requires certificate and hostname verification"
             )
+    tls_args = {}
+    if cfg.app_env in {"production", "staging"}:
+        import certifi
+
+        tls_args["sslrootcert"] = certifi.where()
     return create_engine(
         url,
         pool_size=2,
@@ -33,6 +38,7 @@ def engine():
         pool_recycle=240,
         pool_pre_ping=True,
         connect_args={
+            **tls_args,
             "connect_timeout": 8,
             "options": "-c statement_timeout=15000 -c lock_timeout=5000",
         },
